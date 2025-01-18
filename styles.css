@@ -1,1 +1,37 @@
-
+body {
+  background: skyblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: midnightblue;
+  text-align: center;
+}
+h1:hover {
+  color: yellow;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+.assign {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  background: green;
+  border-radius: 20px;
+}
+.assign img {
+  width: 200px;
+  margin: 10px;
+  border: 2px dashed skyblue;
+}
+.assign img:hover {
+  width: 200px;
+  margin: 10px;
+  border: 2px dashed yellow;
+}
