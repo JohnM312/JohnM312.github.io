@@ -1,98 +1,89 @@
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Replace with your preferred Google Font */
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #f5f5dc, #eaeaea); /* Subtle gradient background */
-    color: #333333; /* Dark gray for text */
+    background: linear-gradient(to bottom right, #f5f5dc, #eaeaea); 
+    color: #333333; 
 }
 
-/* Container for Main Content */
 .content-container {
-    background-color: #ffffff; /* White background for readability */
-    margin: 20px auto; /* Center the content */
-    padding: 20px; /* Add spacing inside */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 80%; /* Make it responsive */
-    max-width: 1200px; /* Limit the width on large screens */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; 
+    margin: 20px auto; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 1200px; 
+    border-radius: 10px; 
 }
 
-/* Header Styles */
 header h1 {
     text-align: center;
-    color: #444444; /* Darker gray for headers */
+    color: #444444; 
     margin-bottom: 20px;
 }
 
-/* Navigation Menu */
 #nav-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Arrange links in a row */
-    justify-content: center; /* Center align the navigation */
-    padding: 0; /* Remove default padding */
-    background-color: #007acc; /* Nice blue for the nav bar */
-    border-radius: 5px; /* Rounded corners */
+    list-style: none; 
+    display: flex; 
+    justify-content: center;
+    padding: 0; 
+    background-color: #007acc;
+    border-radius: 5px; 
 }
 
 #nav-links li {
-    margin: 0 10px; /* Space between links */
+    margin: 0 10px; 
 }
 
 #nav-links a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* White text */
-    padding: 10px 15px; /* Add padding inside links */
-    border-radius: 5px; /* Rounded corners for hover effect */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+    text-decoration: none; 
+    color: #ffffff; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 #nav-links a:hover {
-    background-color: #005f99; /* Darker blue on hover */
-    color: #f5f5dc; /* Light beige on hover */
+    background-color: #005f99; 
+    color: #f5f5dc; 
 }
 
-/* Paragraphs */
 p {
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     margin: 10px 0;
 }
 
-/* Links (General Styling) */
 a {
-    text-decoration: none; /* Remove underline from all links */
-    color: #007acc; /* Default link color */
+    text-decoration: none; 
+    color: #007acc; 
 }
 
 a:hover {
-    color: #005f99; /* Darker blue on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #005f99; 
+    text-decoration: underline; 
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #444444; /* Dark gray for footer */
-    color: #ffffff; /* White text */
+    background-color: #444444; 
+    color: #ffffff; 
     border-radius: 5px;
 }
 
-/* Images */
 img {
-    max-width: 100%; /* Make images responsive */
+    max-width: 100%; 
     height: auto;
     display: block;
-    margin: 20px auto; /* Center images */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Buttons (if used) */
 button {
-    background-color: #007acc; /* Blue background */
-    color: #ffffff; /* White text */
+    background-color: #007acc; 
+    color: #ffffff; 
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -102,23 +93,22 @@ button {
 }
 
 button:hover {
-    background-color: #005f99; /* Darker blue on hover */
+    background-color: #005f99; 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .content-container {
-        width: 95%; /* Adjust for smaller screens */
+        width: 95%; 
         padding: 15px;
     }
 
     #nav-links {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     #nav-links li {
-        margin: 5px 0; /* Add spacing between vertical links */
+        margin: 5px 0; 
     }
 }
 
