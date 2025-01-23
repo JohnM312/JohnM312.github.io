@@ -3,78 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout with Flex</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Combined Layout</title>
 </head>
 <body>
   <header>
-    <h1>Website Header</h1>
+    <h1>Layout with Flex</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <main>
-    <!-- First Section: Horizontal Grid -->
-    <section class="content-grid">
+  <section class="main-content">
+    <div class="ideas">
+      <article class="idea idea-1">
+        <h2>Idea 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="https://betterplaceholder.com/200x200" alt="Placeholder">
+      </article>
+      <article class="idea idea-2">
+        <img src="https://betterplaceholder.com/200x200" alt="Placeholder">
+        <div>
+          <h2>Idea 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+      <article class="idea idea-3">
+        <h2>Idea 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="https://betterplaceholder.com/200x200" alt="Placeholder">
+      </article>
+    </div>
+    <aside>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+      </ul>
+    </aside>
+    <div class="grid-section">
       <article>
-        <h2>Title 1</h2>
-        <img src="https://via.placeholder.com/200x100" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h3>Title 1</h3>
+        <img src="https://betterplaceholder.com/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
       <article>
-        <h2>Title 2</h2>
-        <img src="https://via.placeholder.com/200x100" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h3>Title 2</h3>
+        <img src="https://betterplaceholder.com/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
       <article>
-        <h2>Title 3</h2>
-        <img src="https://via.placeholder.com/200x100" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h3>Title 3</h3>
+        <img src="https://betterplaceholder.com/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
       <article>
-        <h2>Title 4</h2>
-        <img src="https://via.placeholder.com/200x100" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h3>Title 4</h3>
+        <img src="https://betterplaceholder.com/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
-    </section>
-
-    <!-- Second Section: Vertical Stacked Content -->
-    <section class="side-grid">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <h2>Links</h2>
-        <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-        </ul>
-      </aside>
-
-      <!-- Main Content -->
-      <div class="main-content">
-        <article>
-          <h2>Title 1</h2>
-          <img src="https://via.placeholder.com/200x50" alt="Placeholder">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </article>
-        <article>
-          <h2>Title 4</h2>
-          <img src="https://via.placeholder.com/200x50" alt="Placeholder">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </article>
-        <article>
-          <h2>Title 5</h2>
-          <img src="https://via.placeholder.com/200x50" alt="Placeholder">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </article>
-        <article>
-          <h2>Title 6</h2>
-          <img src="https://via.placeholder.com/200x50" alt="Placeholder">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
+    </div>
+  </section>
   <footer>
     <p>@portiaplante.com</p>
   </footer>
