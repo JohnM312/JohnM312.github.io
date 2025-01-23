@@ -64,25 +64,41 @@ nav ul li a {
   max-height: 200px;
 }
 
-aside {
+.bottom-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.titles-left,
+.titles-right {
+  flex: 1;
+}
+
+.links {
+  flex: 0.5;
   background-color: #f08080;
   padding: 20px;
   color: white;
 }
 
-aside ul {
+.links ul {
   list-style: none;
 }
 
-.grid-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.links ul li {
+  margin-bottom: 10px;
 }
 
-.grid-section article {
-  padding: 10px;
+article {
   background-color: #b0c4de;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -99,6 +115,10 @@ footer {
   }
 
   .ideas {
+    flex-direction: column;
+  }
+
+  .bottom-layout {
     flex-direction: column;
   }
 }
