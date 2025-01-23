@@ -1,1 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with your preferred Google Font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f5f5dc, #eaeaea); /* Subtle gradient background */
+    color: #333333; /* Dark gray for text */
+}
+
+/* Container for Main Content */
+.content-container {
+    background-color: #ffffff; /* White background for readability */
+    margin: 20px auto; /* Center the content */
+    padding: 20px; /* Add spacing inside */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 80%; /* Make it responsive */
+    max-width: 1200px; /* Limit the width on large screens */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Header Styles */
+header h1 {
+    text-align: center;
+    color: #444444; /* Darker gray for headers */
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+#nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange links in a row */
+    justify-content: center; /* Center align the navigation */
+    padding: 0; /* Remove default padding */
+    background-color: #007acc; /* Nice blue for the nav bar */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#nav-links li {
+    margin: 0 10px; /* Space between links */
+}
+
+#nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Add padding inside links */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+#nav-links a:hover {
+    background-color: #005f99; /* Darker blue on hover */
+    color: #f5f5dc; /* Light beige on hover */
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6; /* Improve readability */
+    margin: 10px 0;
+}
+
+/* Links (General Styling) */
+a {
+    text-decoration: none; /* Remove underline from all links */
+    color: #007acc; /* Default link color */
+}
+
+a:hover {
+    color: #005f99; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #444444; /* Dark gray for footer */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Buttons (if used) */
+button {
+    background-color: #007acc; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f99; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        width: 95%; /* Adjust for smaller screens */
+        padding: 15px;
+    }
+
+    #nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0; /* Add spacing between vertical links */
+    }
+}
 
