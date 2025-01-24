@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout with Flex</title>
   <link rel="stylesheet" href="styles.css">
-  <title>CSCE 242: John M. Layout</title>
 </head>
 <body>
   <header>
     <h1>Layout with Flex</h1>
     <nav>
-      <ul class="nav-menu">
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>
@@ -20,88 +20,91 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <!-- First Section: Three Ideas -->
     <section class="ideas">
-      <article>
-        <h2>Idea 1</h2>
-        <img src="https://fakeimg.pl/200x200" alt="Placeholder for Idea 1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis libero nec neque tincidunt efficitur.</p>
+      <h2>Big Ideas!</h2>
+      <article class="idea">
+        <h3>Idea 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <img src="https://fakeimg.pl/200x200" alt="Placeholder">
       </article>
-      <article>
-        <h2>Idea 2</h2>
-        <img src="https://fakeimg.pl/200x200" alt="Placeholder for Idea 2">
-        <p>Curabitur ullamcorper quam nec nisl tempor, sed posuere ex fermentum. Ut convallis lorem nec arcu.</p>
+      <article class="idea">
+        <h3>Idea 2</h3>
+        <img src="https://fakeimg.pl/200x200" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       </article>
-      <article>
-        <h2>Idea 3</h2>
-        <img src="https://fakeimg.pl/200x200" alt="Placeholder for Idea 3">
-        <p>Aliquam auctor libero ac massa vulputate, a egestas sem dictum. Vestibulum eget luctus libero.</p>
-      </article>
-    </section>
-
-    <!-- Second Section: Four Titles -->
-    <section class="titles-100">
-      <article>
-        <h2>Title 1</h2>
-        <img src="https://fakeimg.pl/200x100" alt="Placeholder for Title 1">
-        <p>Donec sit amet diam in erat gravida dictum. Suspendisse sed orci nec nisi aliquet pellentesque.</p>
-      </article>
-      <article>
-        <h2>Title 2</h2>
-        <img src="https://fakeimg.pl/200x100" alt="Placeholder for Title 2">
-        <p>Mauris in tortor eget urna sagittis ultrices. Quisque viverra dolor quis tellus aliquet, nec venenatis ligula.</p>
-      </article>
-      <article>
-        <h2>Title 3</h2>
-        <img src="https://fakeimg.pl/200x100" alt="Placeholder for Title 3">
-        <p>Nullam consectetur elit ut urna tristique, et suscipit erat malesuada. Suspendisse volutpat pharetra purus.</p>
-      </article>
-      <article>
-        <h2>Title 4</h2>
-        <img src="https://fakeimg.pl/200x100" alt="Placeholder for Title 4">
-        <p>Praesent eu justo vel lectus congue accumsan. Vestibulum pulvinar dapibus nisi et tincidunt.</p>
+      <article class="idea">
+        <h3>Idea 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <img src="https://fakeimg.pl/200x200" alt="Placeholder">
       </article>
     </section>
-
-    <!-- Third Section: Six Titles -->
-    <section class="titles-50">
-      <article>
-        <h2>Title 1</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 1">
-        <p>Suspendisse sed nulla quis sapien tincidunt suscipit.</p>
-      </article>
-      <article>
-        <h2>Title 2</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 2">
-        <p>Morbi fermentum nisi sit amet velit bibendum mollis.</p>
-      </article>
-      <article>
-        <h2>Title 3</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 3">
-        <p>Fusce ut nisi ac felis cursus aliquet nec eu lectus.</p>
-      </article>
-      <article>
-        <h2>Title 4</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 4">
-        <p>Etiam vitae purus nec ligula vestibulum tincidunt.</p>
-      </article>
-      <article>
-        <h2>Title 5</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 5">
-        <p>Quisque feugiat lectus vel ligula vehicula convallis.</p>
-      </article>
-      <article>
-        <h2>Title 6</h2>
-        <img src="https://fakeimg.pl/200x50" alt="Placeholder for Title 6">
-        <p>Integer eget velit nec ligula suscipit tincidunt.</p>
-      </article>
+    <section class="titles">
+      <div>
+        <h3>Title 1</h3>
+        <img src="https://fakeimg.pl/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 2</h3>
+        <img src="https://fakeimg.pl/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 3</h3>
+        <img src="https://fakeimg.pl/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 4</h3>
+        <img src="https://fakeimg.pl/200x100" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+    </section>
+    <aside class="links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+      </ul>
+    </aside>
+    <section class="small-titles">
+      <div>
+        <h3>Title 1</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 2</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 3</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 4</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 5</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div>
+        <h3>Title 6</h3>
+        <img src="https://fakeimg.pl/200x50" alt="Placeholder">
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
     </section>
   </main>
-
   <footer>
-    <p>jnmai@email.sc.edu</p>
+    <p>@portiaplante.com</p>
   </footer>
 </body>
 </html>
