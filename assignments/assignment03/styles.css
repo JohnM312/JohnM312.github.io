@@ -13,7 +13,6 @@ header {
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
   color: #4a6c7b;
 }
@@ -23,7 +22,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 nav ul li {
@@ -38,6 +37,7 @@ nav ul li a {
   border-radius: 3px;
 }
 
+/* Main Layout */
 main {
   padding: 20px;
 }
@@ -47,7 +47,6 @@ section.ideas {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -58,19 +57,19 @@ section.ideas {
   margin-bottom: 20px;
 }
 
-/* Each Idea Box */
 .idea {
   background-color: #4a6c7b;
   color: white;
   padding: 20px;
-  flex: 1 1 calc(33.33% - 20px); /* Default: 3 items per row */
+  flex: 1 1 calc(33.33% - 20px);
   text-align: center;
 }
 
 .idea img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px;
+  display: block;
+  margin: 10px auto 0;
+  width: 200px;
+  height: 200px;
 }
 
 /* Titles Section: Vertical Layout */
@@ -81,11 +80,18 @@ section.titles {
   margin-bottom: 20px;
 }
 
-.titles div {
+.title {
   background-color: #f79b9b;
+  color: white;
   padding: 20px;
   text-align: center;
-  color: white;
+}
+
+.title img {
+  display: block;
+  margin: 10px auto 0;
+  width: 200px;
+  height: 100px;
 }
 
 /* Links Section: Vertical Layout */
@@ -99,47 +105,36 @@ section.titles {
   padding: 0;
 }
 
-.links ul li a {
-  text-decoration: none;
-  color: #f79b9b;
-}
-
 .links ul li {
   margin-bottom: 10px;
 }
 
-/* Small Titles Section: Vertical Layout */
-section.small-titles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.small-titles div {
-  flex: 1 1 calc(33% - 20px);
+.links ul li a {
+  text-decoration: none;
+  color: #4a6c7b;
+  padding: 5px 10px;
   background-color: #f79b9b;
-  padding: 20px;
-  text-align: center;
-  color: white;
+  border-radius: 3px;
 }
 
+/* Footer */
 footer {
   background-color: #f8e1e1;
-  padding: 10px 0;
   text-align: center;
+  padding: 10px 0;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   /* Ideas Section Adjusts to 2 items per row */
-  .idea {
+  .ideas .idea {
     flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 768px) {
   /* Ideas Section Adjusts to 1 item per row */
-  .idea {
+  .ideas .idea {
     flex: 1 1 100%;
   }
 
@@ -147,7 +142,6 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
-    padding: 0;
   }
 
   nav ul li {
