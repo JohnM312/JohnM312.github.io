@@ -128,6 +128,7 @@ footer {
   nav ul {
     flex-direction: column; /* Stack nav items vertically */
     align-items: center;
+    padding: 0;
   }
 
   nav ul li {
