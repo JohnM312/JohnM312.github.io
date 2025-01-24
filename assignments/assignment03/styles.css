@@ -43,10 +43,14 @@ main {
 }
 
 section.ideas {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 .ideas h2 {
+  flex-basis: 100%;
   font-size: 1.8rem;
   color: #4a6c7b;
   margin-bottom: 20px;
@@ -54,28 +58,26 @@ section.ideas {
 
 .idea {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #4a6c7b;
   color: white;
-  margin-bottom: 20px;
   padding: 20px;
+  flex: 1;
+  text-align: center;
 }
 
 .idea img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
 }
 
-section.titles,
-section.small-titles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+section.titles {
+  margin-bottom: 20px;
 }
 
-.titles div,
-.small-titles div {
-  flex: 1 1 calc(25% - 20px);
+.titles div {
+  margin-bottom: 20px;
   background-color: #f79b9b;
   padding: 20px;
   text-align: center;
@@ -95,6 +97,24 @@ section.small-titles {
 .links ul li a {
   text-decoration: none;
   color: #f79b9b;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+section.small-titles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.small-titles div {
+  flex: 1 1 calc(33% - 20px);
+  background-color: #f79b9b;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
 footer {
