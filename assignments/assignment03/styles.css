@@ -47,6 +47,7 @@ section.ideas {
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Allows flexibility for smaller screens */
 }
 
 .ideas h2 {
@@ -62,7 +63,7 @@ section.ideas {
   background-color: #4a6c7b;
   color: white;
   padding: 20px;
-  flex: 1;
+  flex: 1 1 calc(33% - 20px); /* Ensures horizontal layout */
   text-align: center;
 }
 
@@ -123,15 +124,25 @@ footer {
   text-align: center;
 }
 
-/* Responsive Navigation */
+/* Responsive Navigation and Ideas Section */
 @media (max-width: 768px) {
+  /* Navigation buttons stack vertically */
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
+    flex-direction: column;
     align-items: center;
     padding: 0;
   }
 
   nav ul li {
-    margin: 10px 0; /* Add spacing between stacked items */
+    margin: 10px 0;
+  }
+
+  /* Ideas stack vertically on smaller screens */
+  section.ideas {
+    flex-direction: column; /* Switch to vertical layout */
+  }
+
+  .idea {
+    flex: 1 1 100%; /* Take full width on small screens */
   }
 }
