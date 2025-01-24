@@ -47,15 +47,57 @@ nav {
   background-color: #d87c7c;
 }
 
-/* First Section: Horizontal Layout */
-.content-grid {
+/* Section: Ideas (3 Items with 200x200 images) */
+.ideas {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 1em;
+}
+
+.ideas article {
+  background-color: #91a7a7;
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  width: 30%;
+}
+
+.ideas img {
+  display: block;
+  margin: 1em auto;
+}
+
+/* Section: Titles (4 Items with 200x100 images) */
+.titles-100 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  margin-bottom: 2em;
+  margin: 2em 1em;
 }
 
-.content-grid article {
+.titles-100 article {
+  background-color: #f4a1a1;
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.titles-100 img {
+  display: block;
+  margin: 1em auto;
+}
+
+/* Section: Titles (6 Items with 200x50 images) */
+.titles-50 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin: 2em 1em;
+}
+
+.titles-50 article {
   background-color: #91a7a7;
   padding: 1em;
   text-align: center;
@@ -63,54 +105,9 @@ nav {
   color: #fff;
 }
 
-.content-grid img {
-  margin: 1em 0;
-}
-
-/* Second Section: Vertical Layout */
-.side-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1em;
-}
-
-.sidebar {
-  background-color: #f4a1a1;
-  padding: 1em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 0.5em;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.main-content {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  gap: 1em;
-}
-
-.main-content article {
-  background-color: #91a7a7;
-  padding: 1em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.main-content img {
+.titles-50 img {
   display: block;
-  margin: 0.5em auto;
+  margin: 1em auto;
 }
 
 /* Footer */
