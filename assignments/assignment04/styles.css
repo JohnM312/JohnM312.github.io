@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #003366; /* University Blue */
+    background-color: #black; /* University Blue */
     padding: 10px 0;
 }
 
@@ -25,7 +25,7 @@ header {
 }
 
 .navbar a {
-    color: #FFFFFF;
+    color: #red;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -46,7 +46,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
+    color: #red;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -76,7 +76,7 @@ section img {
 }
 
 footer {
-    background-color: #003366;
+    background-color: #red;
     color: #FFFFFF;
     text-align: center;
     padding: 20px;
