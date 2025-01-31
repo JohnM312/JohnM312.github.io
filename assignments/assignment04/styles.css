@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Adjust to match screenshot */
+    background-color: #f4f4f4; 
 }
 
 /* Top Navigation */
 .top-nav {
-    background: #570000; /* Adjusted to match screenshot */
+    background: #570000; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background-color: #730000; /* Adjusted to match screenshot */
+    background-color: #730000; 
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -74,7 +74,7 @@ header {
 /* Sidebar */
 .sidebar {
     width: 25%;
-    background: #ececec; /* Light gray to match screenshot */
+    background: #ececec; 
     padding: 20px;
 }
 
@@ -156,7 +156,7 @@ header {
 
 /* Footer */
 footer {
-    background: #570000; /* Adjusted to match screenshot */
+    background: #570000; 
     color: white;
     padding: 20px;
 }
