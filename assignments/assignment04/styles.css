@@ -154,31 +154,32 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* Footer - Top Section (Dark Garnet/Maroon) */
 footer {
-    background: #570000; 
+    background: #570000; /* Dark Garnet/Maroon */
     color: white;
     padding: 20px;
 }
 
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+/* Footer - Bottom Section (Black) */
+.footer-bottom {
+    background: black; /* Matches Screenshot 3 */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links .column h3 a {
+.footer-bottom a {
     color: white;
     text-decoration: none;
+    margin: 0 8px;
 }
 
-footer p {
-    text-align: center;
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
     margin-top: 20px;
     font-size: 0.9em;
 }
