@@ -143,16 +143,17 @@ header {
 
 .news-articles {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stacks items vertically */
     gap: 20px;
 }
 
 .news-articles article {
-    width: 45%;
+    width: 100%; /* Takes full width */
     background: #ffffff;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Footer - Top Section (Dark Garnet/Maroon) */
 footer {
