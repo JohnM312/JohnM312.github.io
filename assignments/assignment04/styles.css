@@ -5,70 +5,120 @@ body {
 }
 
 .top-bar {
-    background-color: #990000;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background: #333;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
     color: white;
-    text-decoration: none;
     padding: 10px;
-    display: inline-block;
+    font-size: 14px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #800000;
+    color: white;
+    padding: 15px;
+}
+
+.main-header input {
+    padding: 5px;
 }
 
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 20px;
+    left: 20px;
+    color: white;
     background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.content {
+    display: flex;
     padding: 20px;
+}
+
+aside {
+    width: 20%;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 5px 0;
+}
+
+.programs {
+    width: 75%;
+    padding-left: 20px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .card {
-    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    transition: all 0.3s;
 }
 
-footer {
-    background: #990000;
+.card:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.news {
+    padding: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 150px;
+    margin-right: 15px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
     color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+}
+
+.footer-grid h3 {
+    margin-bottom: 10px;
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-grid ul li {
+    padding: 5px 0;
 }
