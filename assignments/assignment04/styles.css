@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Adjust this based on the screenshot */
+    background-color: #f4f4f4; /* Adjust to match screenshot */
 }
 
 /* Top Navigation */
 .top-nav {
-    background: #333;
+    background: #570000; /* Adjusted to match screenshot */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background-color: #990000;
+    background-color: #730000; /* Adjusted to match screenshot */
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -67,14 +67,14 @@ header {
 /* College of Arts and Sciences Section */
 .college-info {
     display: flex;
-    background: white; /* Background from the screenshot */
+    background: white;
     padding: 20px;
 }
 
 /* Sidebar */
 .sidebar {
     width: 25%;
-    background: #e6e6e6; /* Adjust background color */
+    background: #ececec; /* Light gray to match screenshot */
     padding: 20px;
 }
 
@@ -127,7 +127,7 @@ header {
 /* Arts and Sciences News Section */
 .news {
     padding: 20px;
-    background: #f9f9f9; /* Background color based on screenshot */
+    background: #f9f9f9;
 }
 
 .social-links {
@@ -156,7 +156,7 @@ header {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #570000; /* Adjusted to match screenshot */
     color: white;
     padding: 20px;
 }
