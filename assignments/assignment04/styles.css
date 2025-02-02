@@ -89,7 +89,6 @@ body {
     font-weight: bold;
 }
 
-
 /* Header */
 header {
     background-color: #730000; 
@@ -145,11 +144,21 @@ header {
     padding: 0;
 }
 
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+/* Ensures links inside <li> items are styled properly */
 .sidebar ul li a {
     text-decoration: none;
     color: black;
     display: block;
     padding: 8px 0;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Main Content */
@@ -216,7 +225,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Footer - Top Section (Dark Garnet/Maroon) */
 footer {
     background: #570000; /* Dark Garnet/Maroon */
@@ -241,8 +249,4 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
-}
-
-    margin-top: 20px;
-    font-size: 0.9em;
 }
