@@ -5,20 +5,77 @@ body {
     background-color: #f4f4f4; 
 }
 
-/* Top Navigation */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Navigation Bar */
 .top-nav {
-    background: #570000; 
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
-    font-size: 0.9em;
+    align-items: center;
+    padding: 10px 30px;
 }
 
-.top-nav a {
+/* University Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+/* Search Bar */
+.search-box {
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: white;
+}
+
+/* Maroon Section */
+.maroon-bar {
+    background-color: #570000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* Header */
