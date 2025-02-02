@@ -224,7 +224,20 @@ header {
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* Header */
+.top-bar {
+    background-color: #ddd;
+    color: black;
+    text-align: right;
+    padding: 10px;
+}
 
+.top-bar nav a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 /* Footer - Top Section (Dark Garnet/Maroon) */
 footer {
     background: #570000;
