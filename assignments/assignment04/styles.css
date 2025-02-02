@@ -42,6 +42,9 @@ body {
 
 /* Search Box */
 .search-box {
+    position: absolute;
+    top: 35px; /* Adjusted below gateways */
+    right: 30px;
     display: flex;
     align-items: center;
     background-color: black;
@@ -57,7 +60,7 @@ body {
     color: white;
     outline: none;
     font-size: 14px;
-    width: 120px;
+    width: 150px;
 }
 
 .search-box input::placeholder {
@@ -84,7 +87,8 @@ body {
 .maroon-bar {
     background-color: #570000;
     color: white;
-    padding: 15px 30px;
+    text-align: center;
+    padding: 15px
     font-size: 22px;
     font-weight: bold;
 }
