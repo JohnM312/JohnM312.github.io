@@ -10,9 +10,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Top Navigation Bar */
+/* Top Black Header */
 .top-nav {
     background-color: black;
     color: white;
@@ -20,36 +21,29 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    position: relative;
 }
 
-/* University Logo */
-.logo {
+/* Left: Logo & University Name */
+.logo-container {
     display: flex;
     align-items: center;
-    color: white;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container span {
     font-size: 20px;
     font-weight: bold;
 }
 
-.logo img {
-    height: 30px;
-    margin-right: 10px;
-}
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Search Bar */
+/* Search Box */
 .search-box {
+    display: flex;
+    align-items: center;
     background-color: black;
     border: 1px solid white;
     padding: 5px 10px;
@@ -63,13 +57,30 @@ body {
     color: white;
     outline: none;
     font-size: 14px;
+    width: 120px;
 }
 
 .search-box input::placeholder {
     color: white;
 }
 
-/* Maroon Section */
+/* Top Right: Gateways Navigation */
+.nav-links {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Maroon Bar for College of Arts and Sciences */
 .maroon-bar {
     background-color: #570000;
     color: white;
@@ -77,6 +88,7 @@ body {
     font-size: 22px;
     font-weight: bold;
 }
+
 
 /* Header */
 header {
