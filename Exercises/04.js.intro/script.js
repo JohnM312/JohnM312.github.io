@@ -7,3 +7,5 @@ document.getElementById("btn-click-me").onclick = () => {
 //change color
 document.getElementById("btn-click-me").onclick = () =>
     const messageP = document.getElementById("message");
+    messageP.innerHTML = "Good bye";
+    messageP.classList.add("sad");
