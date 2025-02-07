@@ -13,5 +13,5 @@ const changeColor = () => {
 // Switch Image
 const switchImage = () => {
     const img = document.getElementById("changeImage");
-    img.src = img.src.includes("placeholder") ? "https://via.placeholder.com/200/007bff" : "https://via.placeholder.com/200";
+    img.src = img.src.includes("placeholder") ? "https://place-hold.it/200x200" : "https://place-hold.it/200x200";
 };
