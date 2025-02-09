@@ -38,6 +38,9 @@ header nav {
 .card {
     width: 250px;
 }
+.img {
+    width: 50px;
+}
 
 .welcome-text h1 {
     font-size: 2rem;
