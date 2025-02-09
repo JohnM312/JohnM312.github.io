@@ -6,7 +6,7 @@
 
 body {
     background-color: var(--blue);
-    color: var(--black);
+    color: var(--white);
     font-family: var(--font-primary: Arial, sans-serif);
     margin: 0;
     padding: 0;
