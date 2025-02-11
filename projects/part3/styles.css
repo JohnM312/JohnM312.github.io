@@ -34,6 +34,12 @@ background: cornflowerblue;
    text-decoration: none;
    color: blanchedalmond;
 }
+#nav-toggle-div {
+   width: 35px;
+   height: 5px;
+   background-color: coral;
+   margin: 6px 0;
+}
 .logo {
     width: 300px;
     margin: 20px auto;
@@ -58,6 +64,14 @@ background: cornflowerblue;
    #main-nav-items {
       display: flex;
    }
+   #main-nav-items li {
+      flex: 1;
+   }
+   #main-nav-items a {
+      border-bottom: 2 px solid transparent;
+   }
+   #main-nav-items a:hover {
+      border-bottom: 2px solid coral;
 }
 .rules-container, .decks-container, .catalog-container, .details-container {
     width: 80%;
