@@ -21,25 +21,7 @@ header nav {
     font-weight: bold;
     padding: 10px;
 }
-#main-nav ul {
-   padding-left: 0px;
-   list-style-type: none;
-}
-#main-nav li {
-background: cornflowerblue;
-   padding: 10px;
-   margin: 2px 0;
-}
-#main-nav a {
-   text-decoration: none;
-   color: blanchedalmond;
-}
-#nav-toggle-div {
-   width: 35px;
-   height: 5px;
-   background-color: coral;
-   margin: 6px 0;
-}
+
 .logo {
     width: 300px;
     margin: 20px auto;
@@ -60,19 +42,7 @@ background: cornflowerblue;
 .welcome-text h1 {
     font-size: 2rem;
 }
-@media(min-width: 900px) {
-   #main-nav-items {
-      display: flex;
-   }
-   #main-nav-items li {
-      flex: 1;
-   }
-   #main-nav-items a {
-      border-bottom: 2 px solid transparent;
-   }
-   #main-nav-items a:hover {
-      border-bottom: 2px solid coral;
-}
+
 .rules-container, .decks-container, .catalog-container, .details-container {
     width: 80%;
     margin: 20px auto;
