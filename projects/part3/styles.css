@@ -25,8 +25,14 @@ header nav {
    padding-left: 0px;
    list-style-type: none;
 }
+#main-nav li {
+background: cornflowerblue;
+   padding: 10px;
+   margin: 2px 0;
+}
 #main-nav a {
    text-decoration: none;
+}
 .logo {
     width: 300px;
     margin: 20px auto;
