@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: var(--blue);
+    background-color: var(--blue); 
     color: var(--white);
     font-family: var(--font-primary: Arial, sans-serif);
     margin: 0;
@@ -21,7 +21,12 @@ header nav {
     font-weight: bold;
     padding: 10px;
 }
-
+#main-nav ul {
+   padding-left: 0px;
+   list-style-type: none;
+}
+#main-nav a {
+   text-decoration: none;
 .logo {
     width: 300px;
     margin: 20px auto;
