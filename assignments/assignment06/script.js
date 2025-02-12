@@ -50,10 +50,7 @@ document.getElementById("transport").addEventListener("input", function() {
         default:
             imageUrl = "";
     }
-"bike": "images/bike.jpg",
-        "scooter": "images/scooter.png",
-        "car": "images/car.jpg",
-        "skateboard": "images/skateboard.png"
+    
     transportImage.innerHTML = imageUrl ? `<img src="${imageUrl}" alt="${transportMode}">` : "";
 });
 
