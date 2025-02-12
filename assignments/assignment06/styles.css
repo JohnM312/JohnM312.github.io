@@ -60,6 +60,10 @@ nav {
     margin-top: 20px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Traveling Section */
 #transport-image img {
     width: 150px;
