@@ -1,46 +1,40 @@
-/* General Styling */
+/* General Styles */
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
 }
 
 /* Navigation Menu */
 nav {
     background: #444;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-/* Style for the menu */
 .menu {
-    display: none;  /* Initially hidden */
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 .menu li {
     padding: 10px;
-    background: #f4f4f4;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-}
-
-.menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #666;
+    color: white;
     cursor: pointer;
-    font-size: 18px;
-    background: none;
-    border: none;
 }
 
-/* Toggle Button */
+.menu li:hover {
+    background: #888;
+}
+
+/* Hide the toggle button on larger screens */
 .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
     color: white;
     background: none;
     border: none;
@@ -48,26 +42,67 @@ nav {
     font-size: 18px;
 }
 
-/* Arrow styling */
+/* Arrow Styling */
 #menu-arrow {
     margin-left: 5px;
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease;
 }
 
-/* Exercise Sections */
-.exercise {
-    display: none;
-    margin-top: 20px;
+/* Responsive: Show Toggle Button and Hide Full Menu */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Hide menu by default on small screens */
+        flex-direction: column;
+        text-align: center;
+        background: #444;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .menu li {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button only on small screens */
+    }
 }
 
-.hidden {
-    display: none;
+/* Travelling Section */
+.travel-section {
+    margin: 20px;
+    padding: 20px;
+    background: black;
+    color: white;
 }
 
-/* Traveling Section */
+#transport {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+}
+
 #transport-image img {
-    width: 150px;
+    width: 100px;
     margin-top: 20px;
+}
+
+/* Color My Heart Section */
+.color-section {
+    background: #f8f8e5;
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 /* Heart Shape */
@@ -75,44 +110,28 @@ nav {
     width: 100px;
     height: 100px;
     position: relative;
-    background-color: red;
-    margin: 50px auto;
-    transform: rotate(-45deg);
+    margin: 20px auto;
 }
 
 #heart::before,
 #heart::after {
     content: "";
-    width: 100px;
-    height: 100px;
-    background-color: inherit;
-    border-radius: 50%;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
     position: absolute;
-}
-
-#heart::before {
-    top: -50px;
-    left: 0;
-}
-
-#heart::after {
-    left: 50px;
     top: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .menu-toggle {
-        display: block;
-    }
+#heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: right bottom;
+}
 
-    #menu-items {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #menu-items.show {
-        display: flex;
-    }
+#heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: left bottom;
 }
