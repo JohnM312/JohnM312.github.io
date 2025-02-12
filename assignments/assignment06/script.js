@@ -1,6 +1,6 @@
 function toggleMenu() {
     let menu = document.getElementById("menu-items");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    menu.classList.toggle("show");
 }
 
 function showExercise(num) {
