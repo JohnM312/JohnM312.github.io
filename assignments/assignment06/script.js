@@ -15,7 +15,7 @@ function updateImage() {
     const images = {
         "bike": "images/bike.jpg",
         "scooter": "scooter.png",
-        "car": "car.png",
+        "car": "images/car.jpg",
         "skateboard": "skateboard.png"
     };
 
