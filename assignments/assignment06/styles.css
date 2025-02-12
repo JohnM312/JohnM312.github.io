@@ -1,137 +1,80 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Menu */
-nav {
-    background: #444;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
+/* Menu Styling */
 .menu {
+    background-color: #2c3e50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Full-size menu (default for larger screens) */
+#menu-items {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.menu li {
+#menu-items li {
+    display: inline-block;
     padding: 10px;
-    background: #666;
-    color: white;
     cursor: pointer;
 }
 
-.menu li:hover {
-    background: #888;
+#menu-items li:hover {
+    text-decoration: underline;
 }
 
-/* Hide the toggle button on larger screens */
+/* Menu toggle for small screens */
 .menu-toggle {
     display: none;
-    color: white;
-    background: none;
-    border: none;
     cursor: pointer;
-    font-size: 18px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
-/* Arrow Styling */
-#menu-arrow {
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
-
-/* Responsive: Show Toggle Button and Hide Full Menu */
-@media screen and (max-width: 600px) {
-    .menu {
-        display: none; /* Hide menu by default on small screens */
-        flex-direction: column;
-        text-align: center;
-        background: #444;
-        width: 100%;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-
-    .menu li {
-        display: block;
-        width: 100%;
-        padding: 15px;
-    }
-
-    .menu-toggle {
-        display: block; /* Show toggle button only on small screens */
-    }
-}
-
-/* Travelling Section */
-.travel-section {
-    margin: 20px;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-#transport {
-    padding: 10px;
-    margin-top: 10px;
-    width: 50%;
-}
-
-#transport-image img {
-    width: 100px;
+/* Exercise Sections */
+.exercise {
+    display: none;
     margin-top: 20px;
 }
 
-/* Color My Heart Section */
-.color-section {
-    background: #f8f8e5;
-    padding: 20px;
-    margin: 20px;
-}
-
-button {
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+/* Traveling Section */
+#transport-image img {
+    width: 150px;
+    margin-top: 20px;
 }
 
 /* Heart Shape */
 #heart {
     width: 100px;
     height: 100px;
-    position: relative;
+    background-color: white;
     margin: 20px auto;
+    clip-path: polygon(50% 15%, 100% 40%, 85% 80%, 50% 100%, 15% 80%, 0% 40%);
 }
 
-#heart::before,
-#heart::after {
-    content: "";
-    width: 50px;
-    height: 80px;
-    background: red;
-    border-radius: 50px 50px 0 0;
-    position: absolute;
-    top: 0;
-}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
 
-#heart::before {
-    left: 50px;
-    transform: rotate(-45deg);
-    transform-origin: right bottom;
-}
+    #menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#heart::after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: left bottom;
+    #menu-items.show {
+        display: flex;
+    }
 }
