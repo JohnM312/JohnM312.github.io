@@ -13,7 +13,7 @@ function updateImage() {
     let imageDiv = document.getElementById("transport-image");
 
     const images = {
-        "bike": "bike.png",
+        "bike": "images/bike.jpg",
         "scooter": "scooter.png",
         "car": "car.png",
         "skateboard": "skateboard.png"
