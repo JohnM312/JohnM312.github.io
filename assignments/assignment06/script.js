@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const menu = document.getElementById("menu");
     const arrow = document.getElementById("menu-arrow");
 
-    // Toggle menu visibility
+    // Toggle menu visibility only on small screens
     toggleButton.addEventListener("click", function() {
         if (menu.style.display === "block") {
             menu.style.display = "none";
@@ -13,7 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
             arrow.innerHTML = "▲"; // Arrow points up
         }
     });
+
+    // Ensure menu is always visible on larger screens
+    function handleResize() {
+        if (window.innerWidth > 600) {
+            menu.style.display = "flex"; // Show full menu
+            toggleButton.style.display = "none"; // Hide toggle button
+        } else {
+            menu.style.display = "none"; // Hide menu initially
+            toggleButton.style.display = "block"; // Show toggle button
+        }
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Run on page load
 });
+
 
 // Function to toggle exercises
 function showExercise(exerciseNumber) {
