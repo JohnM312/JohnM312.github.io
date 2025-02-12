@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">▼</div>
+        <ul id="menu-items">
+            <li onclick="showExercise(1)">Exercise 1</li>
+            <li onclick="showExercise(2)">Exercise 2</li>
+        </ul>
+    </nav>
+
+    <section id="traveling" class="exercise">
+        <h2>Travelling</h2>
+        <p>Enter your mode of Transportation</p>
+        <input type="text" id="transport-input" oninput="updateImage()">
+        <div id="transport-image"></div>
+    </section>
+
+    <section id="color-my-heart" class="exercise">
+        <h2>Color My Heart</h2>
+        <button onclick="changeHeartColor('red')">Red</button>
+        <button onclick="changeHeartColor('green')">Green</button>
+        <button onclick="changeHeartColor('blue')">Blue</button>
+        <div id="heart"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
