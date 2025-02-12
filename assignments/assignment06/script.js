@@ -1,7 +1,18 @@
-function toggleMenu() {
-    let menu = document.getElementById("menu-items");
-    menu.classList.toggle("show");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    const arrow = document.getElementById("menu-arrow");
+
+    toggleButton.addEventListener("click", function() {
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+            arrow.innerHTML = "▼"; // Change arrow to down when menu closes
+        } else {
+            menu.style.display = "block";
+            arrow.innerHTML = "▲"; // Change arrow to up when menu opens
+        }
+    });
+});
 
 function showExercise(num) {
     document.getElementById("traveling").style.display = num === 1 ? "block" : "none";
