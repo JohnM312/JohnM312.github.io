@@ -3,41 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 6</title>
+    <title>Assignment 8</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Assignment 6</h1>
-    <h2>If Statements</h2>
-    <!-- Navigation Menu -->
-    <nav>
-        <button id="menu-toggle" class="menu-toggle">
-            Menu <span id="menu-arrow">▼</span>
-        </button>
-        <ul id="menu" class="menu">
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">▼</div>
+        <ul id="menu-items">
             <li onclick="showExercise(1)">Exercise 1</li>
             <li onclick="showExercise(2)">Exercise 2</li>
         </ul>
     </nav>
 
-    <!-- Exercise 1: Traveling -->
-    <div id="exercise-1" class="exercise">
+    <section id="traveling" class="exercise">
         <h2>Travelling</h2>
         <p>Enter your mode of Transportation</p>
-        <input type="text" id="transport-input" placeholder="Type bike, scooter, car, or skateboard" oninput="updateTransportImage()">
-        <div id="transport-image-container"></div>
-    </div>
+        <input type="text" id="transport-input" oninput="updateImage()">
+        <div id="transport-image"></div>
+    </section>
 
-    <!-- Exercise 2: Color My Heart -->
-    <div id="exercise-2" class="exercise hidden">
+    <section id="color-my-heart" class="exercise">
         <h2>Color My Heart</h2>
         <button onclick="changeHeartColor('red')">Red</button>
         <button onclick="changeHeartColor('green')">Green</button>
         <button onclick="changeHeartColor('blue')">Blue</button>
-        <div id="heart-container">
-            <div id="heart"></div> 
-        </div>
-    </div>
+        <div id="heart"></div>
+    </section>
 
     <script src="script.js"></script>
 </body>
