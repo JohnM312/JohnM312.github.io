@@ -16,7 +16,7 @@ function updateImage() {
         "bike": "images/bike.jpg",
         "scooter": "images/scooter.png",
         "car": "images/car.jpg",
-        "skateboard": "skateboard.png"
+        "skateboard": "images/skateboard.png"
     };
 
     imageDiv.innerHTML = images[input] ? `<img src="${images[input]}" alt="${input}">` : "";
