@@ -1,85 +1,65 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
-    background: #f5f5f5;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation Menu */
-nav {
-    background: #444;
+/* Menu Styling */
+.menu {
+    background-color: #2c3e50;
     padding: 10px;
+    color: white;
+    text-align: center;
 }
 
-.menu {
-    display: none;
+/* Full-size menu (default for larger screens) */
+#menu-items {
     list-style: none;
     padding: 0;
-}
-
-.menu li {
-    padding: 10px;
-    background: #666;
-    color: white;
-    cursor: pointer;
-}
-
-.menu li:hover {
-    background: #888;
-}
-
-/* Toggle Button */
-.menu-toggle {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+    gap: 20px;
 }
 
-/* Arrow Styling */
-#menu-arrow {
-    margin-left: 5px;
-    transition: transform 0.3s ease;
+#menu-items li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu-items li:hover {
+    text-decoration: underline;
+}
+
+/* Menu toggle for small screens */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* Exercise Sections */
 .exercise {
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.hidden {
     display: none;
+    margin-top: 20px;
 }
 
-/* Transport Image */
-#transport-image-container img {
+/* Traveling Section */
+#transport-image img {
     width: 150px;
-    height: auto;
     margin-top: 20px;
 }
 
-/* Heart Styling */
-#heart-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
+/* Heart Shape */
 #heart {
-    width: 80px;
-    height: 80px;
-    background-color: white;
+    width: 100px;
+    height: 100px;
     position: relative;
+    background-color: red;
+    margin: 50px auto;
     transform: rotate(-45deg);
 }
 
@@ -103,14 +83,19 @@ nav {
     top: 0;
 }
 
-/* Responsive: Hide Menu on Small Screens */
-@media screen and (max-width: 600px) {
-    .menu {
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu-toggle {
         display: block;
-        text-align: center;
     }
 
-    .menu li {
-        display: block;
+    #menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-items.show {
+        display: flex;
     }
 }
