@@ -6,6 +6,12 @@ body {
     padding: 0;
 }
 
+/* Navigation Menu */
+nav {
+    background: #444;
+    padding: 10px;
+}
+
 /* Style for the menu */
 .menu {
     display: none;  /* Initially hidden */
