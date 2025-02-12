@@ -7,28 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu-toggle" onclick="toggleMenu()">▼</div>
-        <ul id="menu-items">
+
+    <!-- Navigation Menu -->
+    <nav>
+        <button id="menu-toggle" class="menu-toggle">
+            Menu <span id="menu-arrow">▼</span>
+        </button>
+        <ul id="menu" class="menu">
             <li onclick="showExercise(1)">Exercise 1</li>
             <li onclick="showExercise(2)">Exercise 2</li>
         </ul>
     </nav>
 
-    <section id="traveling" class="exercise">
+    <!-- Exercise 1: Traveling -->
+    <div id="exercise-1" class="exercise">
         <h2>Travelling</h2>
         <p>Enter your mode of Transportation</p>
-        <input type="text" id="transport-input" oninput="updateImage()">
-        <div id="transport-image"></div>
-    </section>
+        <input type="text" id="transport-input" placeholder="Type bike, scooter, car, or skateboard" oninput="updateTransportImage()">
+        <div id="transport-image-container"></div>
+    </div>
 
-    <section id="color-my-heart" class="exercise">
+    <!-- Exercise 2: Color My Heart -->
+    <div id="exercise-2" class="exercise hidden">
         <h2>Color My Heart</h2>
         <button onclick="changeHeartColor('red')">Red</button>
         <button onclick="changeHeartColor('green')">Green</button>
         <button onclick="changeHeartColor('blue')">Blue</button>
-        <div id="heart"></div>
-    </section>
+        <div id="heart-container">
+            <div id="heart"></div> 
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
