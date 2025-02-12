@@ -57,9 +57,30 @@ body {
 #heart {
     width: 100px;
     height: 100px;
-    background-color: white;
-    margin: 20px auto;
-    clip-path: polygon(50% 15%, 100% 40%, 85% 80%, 50% 100%, 15% 80%, 0% 40%);
+    position: relative;
+    background-color: red;
+    margin: 50px auto;
+    transform: rotate(-45deg);
+}
+
+#heart::before,
+#heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#heart::before {
+    top: -50px;
+    left: 0;
+}
+
+#heart::after {
+    left: 50px;
+    top: 0;
 }
 
 /* Responsive Design */
