@@ -1,5 +1,5 @@
 :root {
-    --red: #ff0000;
+  --red: #ff0000;
   --yellow: #ffff00;
   --white: #ffffff;
 }
@@ -32,35 +32,42 @@ nav ul li {
     margin: 0 15px;
 }
 
-.home-content {
+.rules-content, .decks-content {
     text-align: center;
     padding: 20px;
 }
 
-.featured-cards {
-    margin-top: 20px;
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.card-grid {
+.column {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+}
+
+.deck-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.card {
-    width: 200px;
+.deck {
+    width: 300px;
     text-align: center;
+    border: 1px solid var(--gray);
+    padding: 15px;
+    background: var(--white);
 }
 
-.card img {
+.deck img {
     width: 100%;
     height: auto;
-    border: 1px solid var(--gray);
-}
-
-.getting-started {
-    margin-top: 30px;
-    padding: 20px;
-    background: var(--gray);
 }
