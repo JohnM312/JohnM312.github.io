@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pokémon TCG Catalog</title>
+    <title>Pokémon TCG Catalog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
+        <img src="pokemon-logo.png" alt="Pokémon Logo" class="logo">
         <nav>
-            <a href="pokemon.html">Home</a>
-            <a href="rules.html">Rules</a>
-            <a href="decks.html">Sample Decks</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="details.html">Card Details</a>
+            <ul>
+                <li><a href="pokemon.html">Home</a></li>
+                <li><a href="rules.html">Rules/Basics</a></li>
+                <li><a href="decks.html">Sample Decks</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="details.html">Card Details</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="home-container">
-        <img src="images/PokemonTCG.png" alt="Pokémon Trading Card Game Logo" class="logo">
-        <div class="home-content">
-            <img src="images/Blastoise EX.png" alt="Blastoise EX Card" class="card">
-            <div class="welcome-text">
-                <h1>Welcome to the Pokémon TCG Catalog!</h1>
-                <p>Get ready to dive into a world of the Pokémon TCG Universe!</p>
-            </div>
-        </div>
-    </main>
+    <main class="home-content">
+        <section class="introduction">
+            <h1>Welcome to the Pokémon TCG Catalog!</h1>
+            <p>Discover the exciting world of the Pokémon Trading Card Game. Build powerful decks, battle friends, and collect iconic cards!</p>
+        </section>
 
+        <section class="featured-cards">
+            <h2>Featured Cards</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="charizard-card.png" alt="Charizard EX">
+                    <p><strong>Charizard EX</strong> - A powerful Fire-type Pokémon with devastating attacks.</p>
+                </div>
+                <div class="card">
+                    <img src="blastoise-card.png" alt="Blastoise EX">
+                    <p><strong>Blastoise EX</strong> - A Water-type Pokémon known for its high defense and Hydro Cannon attack.</p>
+                </div>
+                <div class="card">
+                    <img src="pikachu-card.png" alt="Pikachu V">
+                    <p><strong>Pikachu V</strong> - The iconic Electric-type Pokémon with high-speed attacks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="getting-started">
+            <h2>Getting Started Guide</h2>
+            <p>If you're new to the Pokémon TCG, follow these steps to begin your journey:</p>
+            <ol>
+                <li>Get a 60-card deck with a mix of Pokémon, Energy, and Trainer cards.</li>
+                <li>Learn the basic rules and how to play your cards.</li>
+                <li>Start battling with friends or enter tournaments to test your skills!</li>
+            </ol>
+        </section>
+    </main>
 </body>
 </html>
