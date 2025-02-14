@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Decks</title>
+    <title>Sample Decks - Pokémon TCG</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/PokemonTCG.png" alt="Pokémon Logo" class="logo">
+        <img src="pokemon-logo.png" alt="Pokémon Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="pokemon.html">Home</a></li>
-                <li><a href="rules.html">Rules/Basics</a></li>
+                <li><a href="rules.html">Rules</a></li>
                 <li><a href="decks.html">Sample Decks</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
                 <li><a href="details.html">Card Details</a></li>
@@ -20,15 +20,40 @@
         </nav>
     </header>
 
-    <main class="decks">
+    <main class="decks-content">
         <h1>Sample Decks</h1>
-        <p>Here are different deck-building strategies.</p>
-        <ul>
-            <li>Aggressive (Fast Attackers)</li>
-            <li>Tanky (High HP, Healing)</li>
-            <li>Combo/Special Effects</li>
-        </ul>
-        <img src="deck-samples.png" alt="Deck Samples" class="deck-image">
+
+        <section class="deck-container">
+            <div class="deck">
+                <h2>Fire Blast Deck</h2>
+                <img src="charizard-deck.png" alt="Charizard Deck">
+                <p>A strong **Fire-type** deck featuring Charizard for high-damage attacks.</p>
+                <ul>
+                    <li>Strong against **Grass & Ice types**.</li>
+                    <li>Focuses on **high-damage attacks**.</li>
+                </ul>
+            </div>
+
+            <div class="deck">
+                <h2>Water Surge Deck</h2>
+                <img src="blastoise-deck.png" alt="Blastoise Deck">
+                <p>A **Water-type** deck built around Blastoise's powerful Hydro Pump.</p>
+                <ul>
+                    <li>Good against **Fire & Rock types**.</li>
+                    <li>Uses **Energy acceleration** strategies.</li>
+                </ul>
+            </div>
+
+            <div class="deck">
+                <h2>Electric Speed Deck</h2>
+                <img src="pikachu-deck.png" alt="Pikachu Deck">
+                <p>An **Electric-type** deck featuring Pikachu and Raichu for quick attacks.</p>
+                <ul>
+                    <li>Great for **fast-paced battles**.</li>
+                    <li>Weak against **Ground types**.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 </body>
 </html>
