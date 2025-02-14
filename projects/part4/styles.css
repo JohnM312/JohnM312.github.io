@@ -1,7 +1,7 @@
 :root {
-    --red: #632;
-    --white: #0;
-    --yellow: #400;
+    --red: #ff0000;
+  --yellow: #ffff00;
+  --white: #ffffff;
 }
 
 body {
