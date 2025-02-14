@@ -32,6 +32,35 @@ nav ul li {
     margin: 0 15px;
 }
 
-img {
-    max-width: 100%;
+.home-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-cards {
+    margin-top: 20px;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--gray);
+}
+
+.getting-started {
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--gray);
 }
