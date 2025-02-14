@@ -1,49 +1,37 @@
 :root {
-   --blue: #6495ed;
-  --white: #faf0e6; 
-    --font-primary: Arial, sans-serif;
+    --black: #000;
+    --white: #fff;
+    --gray: #ccc;
 }
 
 body {
-    background-color: var(--blue); 
-    color: var(--white);
-    font-family: var(--font-primary: Arial, sans-serif);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: var(--white);
 }
 
-header nav {
+header {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    align-items: center;
+    background: var(--gray);
     padding: 10px;
 }
 
 .logo {
-    width: 300px;
-    margin: 20px auto;
-    display: block;
+    width: 150px;
 }
 
-.home-content {
+nav ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
-.card {
-    width: 250px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.welcome-text h1 {
-    font-size: 2rem;
-}
-
-.rules-container, .decks-container, .catalog-container, .details-container {
-    width: 80%;
-    margin: 20px auto;
+img {
+    max-width: 100%;
 }
