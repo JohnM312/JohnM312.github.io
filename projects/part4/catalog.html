@@ -7,34 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
+        <img src="pokemon-logo.png" alt="Pokémon Logo" class="logo">
         <nav>
-            <a href="pokemon.html">Home</a>
-            <a href="rules.html">Rules</a>
-            <a href="decks.html">Sample Decks</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="details.html">Card Details</a>
+            <ul>
+                <li><a href="pokemon.html">Home</a></li>
+                <li><a href="rules.html">Rules/Basics</a></li>
+                <li><a href="decks.html">Sample Decks</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="details.html">Card Details</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="catalog-container">
-        <h1>Trading Card Database:</h1>
-        <img src="images/PokemonTCG.png" alt="Pokémon Trading Card Game Logo" class="logo">
-        <label>Card Name: <input type="text" placeholder="Please enter"></label>
-        <label>Energy Types:
+    <main class="catalog">
+        <h1>Trading Card Database</h1>
+        <form>
+            <label>Card Name:</label>
+            <input type="text" placeholder="Enter card name">
+            <label>Energy Type:</label>
             <select>
-                <option>Energy Types Menu</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Electric</option>
             </select>
-        </label>
-        <div class="search-options">
-            <select><option>Select Pokémon Type</option></select>
-            <select><option>Select Trainer - Item</option></select>
-            <select><option>Select Energy Type</option></select>
-        </div>
-        <button>Search</button>
-        <img src="images/Articuno EX.jpg" alt="Articuno EX Card" class="card">
+        </form>
+        <img src="articuno-card.png" alt="Articuno EX Card" class="card-image">
     </main>
-
 </body>
 </html>
