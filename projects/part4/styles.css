@@ -12,27 +12,64 @@ body {
     background-color: var(--white);
 }
 
+/* Header & Navigation Bar */
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Keeps logo and nav separated */
     background: var(--red);
-    padding: 10px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
+/* Logo Styling */
 .logo {
     width: 150px;
 }
 
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+}
+
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
+    margin: 0;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 5px 10px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* Mobile Responsive Navigation for nav bar */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
 /* Home Page Layout */
 .home-container {
     text-align: center;
@@ -90,7 +127,7 @@ nav ul li {
     height: auto;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive for Home */
 @media (max-width: 768px) {
     .top-row {
         flex-direction: column;
@@ -217,7 +254,7 @@ nav ul li {
     border-left: 4px solid #ffcc00;
     text-align: left;
 }
-/* Responsive Fix for Mobile */
+/* Responsive Fix for Mobile for Catalog */
 @media (max-width: 768px) {
     .trading-card-database {
         flex-direction: column;
