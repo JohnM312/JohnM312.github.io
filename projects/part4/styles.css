@@ -16,14 +16,14 @@ body, h1, h2, h3, p, ul {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--#ffffff);
     color: var(--text-color);
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: var(--header-bg);
+    background-color: var(--#ff0000);
     padding: 20px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ header {
 
 /* Navigation Bar */
 nav {
-    background-color: var(--nav-bg);
+    background-color: var(--#3b4cca);
     padding: 10px;
 }
 
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 .home-column {
-    background-color: var(--column-bg);
+    background-color: var(--#ffffff);
     padding: 15px;
     border-radius: 8px;
     flex: 1;
@@ -124,7 +124,7 @@ nav ul li a {
 }
 
 .column {
-    background-color: var(--column-bg);
+    background-color: var(--#ffffff);
     padding: 15px;
     border-radius: 8px;
     flex: 1;
@@ -145,7 +145,7 @@ nav ul li a {
 }
 
 .deck {
-    background-color: var(--column-bg);
+    background-color: var(--#ffffff);
     padding: 15px;
     border-radius: 8px;
     width: 300px;
