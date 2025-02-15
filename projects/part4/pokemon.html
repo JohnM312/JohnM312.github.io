@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon TCG Catalog</title>
+    <title>Home - Pokémon TCG</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="images/PokemonTCG.png" alt="Pokémon Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="pokemon.html">Home</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="decks.html">Sample Decks</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="details.html">Card Details</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="home-content">
-        <section class="introduction">
-            <h1>Welcome to the Pokémon TCG Catalog!</h1>
-            <p>Discover the exciting world of the Pokémon Trading Card Game. Build powerful decks, battle friends, and collect iconic cards!</p>
-        </section>
+<header>
+    <img src="logo.png" alt="Pokemon Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules/Basics</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section class="featured-cards">
-            <h2>Featured Cards</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <img src="images/Moltres EX.png" alt="Moltres EX">
-                    <p><strong>Moltres EX</strong> - A powerful Fire-type Pokémon with devastating attacks.</p>
-                </div>
-                <div class="card">
-                    <img src="images/Blastoise EX.png" alt="Blastoise EX">
-                    <p><strong>Blastoise EX</strong> - A Water-type Pokémon known for its high defense and Hydro Cannon attack.</p>
-                </div>
-                <div class="card">
-                    <img src="images/Articuno EX.jpg" alt="Articuno EX">
-                    <p><strong>Articuno EX</strong> - The legendary Ice-type Pokemon that releases freezing blows.</p>
-                </div>
-            </div>
-        </section>
+<main class="home-container">
+    <h1>Welcome to the Pokémon Trading Card Game!</h1>
 
-        <section class="getting-started">
+    <div class="column-container">
+        <!-- Introduction Section -->
+        <div class="column">
+            <h2>Introduction to Pokémon TCG</h2>
+            <p>The Pokémon Trading Card Game (TCG) is a collectible card game where players build decks around their favorite Pokémon and battle against others.</p>
+            <img src="pokemon-tcg-intro.jpg" alt="Pokémon TCG">
+        </div>
+
+        <!-- Getting Started Guide -->
+        <div class="column">
             <h2>Getting Started Guide</h2>
-            <p>If you're new to the Pokémon TCG, follow these steps to begin your journey:</p>
-            <ol>
-                <li>Get a 60-card deck with a mix of Pokémon, Energy, and Trainer cards.</li>
-                <li>Learn the basic rules and how to play your cards by clicking the "Rules" link above!.</li>
-                <li>Start battling with friends or enter tournaments to test your skills!</li>
-            </ol>
-        </section>
-    </main>
+            <ul>
+                <li>Get a **starter deck** or build your own.</li>
+                <li>Learn the basic rules and mechanics.</li>
+                <li>Play against friends or in tournaments.</li>
+                <li>Collect rare cards to enhance your deck!</li>
+            </ul>
+        </div>
+
+        <!-- Featured Cards Section -->
+        <div class="column">
+            <h2>Featured Cards</h2>
+            <div class="featured-card">
+                <img src="charizard-ex.jpg" alt="Charizard EX Card">
+                <p><strong>Charizard EX:</strong> A powerful Fire-type Pokémon known for its devastating attacks.</p>
+            </div>
+            <div class="featured-card">
+                <img src="pikachu-v.jpg" alt="Pikachu V Card">
+                <p><strong>Pikachu V:</strong> A fan-favorite Electric-type Pokémon with high-speed moves.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
 </body>
 </html>
