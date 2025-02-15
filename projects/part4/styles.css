@@ -1,37 +1,64 @@
+/* Global CSS Variables */
 :root {
-    --black: #000;
-    --white: #fff;
-    --gray: #ccc;
+    --background-color: #ffffff; /* White background */
+    --text-color: #333;
+    --primary-color: #ffcc00;
+    --header-bg: #ff0000; /* Red header */
+    --nav-bg: #3b4cca;
+    --column-bg: #ffffff;
+}
+
+/* Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--white);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    display: flex;
-    align-items: center;
-    background: var(--gray);
-    padding: 10px;
+    background-color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
 }
 
 .logo {
-    width: 150px;
+    max-width: 200px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--nav-bg);
+    padding: 10px;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures nav items wrap on smaller screens */
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
-    flex-wrap: wrap;
+    display: inline;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
 /* Responsive Navigation for Mobile */
 @media (max-width: 768px) {
     nav ul {
@@ -40,42 +67,99 @@ nav ul li {
         gap: 10px;
     }
 }
-.rules-content, .decks-content {
-    text-align: center;
-    padding: 20px;
-}
 
-.column-container {
+/* Home Page Content */
+.home-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-column {
+    background-color: var(--column-bg);
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Image in Home Page */
+.home-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+/* Featured Cards */
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.featured-cards img {
+    width: 150px;
+    height: auto;
+}
+
+/* Rules and Sample Decks Specific Styles */
+.rules-content, .decks-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Columns for Rules and Basics */
+.column-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Ensures columns wrap on smaller screens */
 }
 
 .column {
-    flex: 1;
-    min-width: 250px;
+    background-color: var(--column-bg);
     padding: 15px;
-    border: 1px solid var(--gray);
-    background-color: var(--white);
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px; /* Ensures columns don't shrink too much */
 }
 
+.column img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Decks Page - Style Sample Decks */
 .deck-container {
     display: flex;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .deck {
+    background-color: var(--column-bg);
+    padding: 15px;
+    border-radius: 8px;
     width: 300px;
     text-align: center;
-    border: 1px solid var(--gray);
-    padding: 15px;
-    background: var(--white);
 }
 
 .deck img {
     width: 100%;
-    height: auto;
+    border-radius: 5px;
+}
+
+/* Ensure Home Page is not affected by changes */
+.pokemon-home-page .column-container,
+.pokemon-home-page .deck-container {
+    display: flex;
+    flex-wrap: wrap;
 }
