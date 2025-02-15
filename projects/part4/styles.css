@@ -34,6 +34,42 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Catalog Page Specific Styling */
+.catalog-container {
+    padding: 20px;
+}
+
+.trading-card-database {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-types {
+    display: flex;
+    gap: 10px;
+}
+
+.search-button {
+    background-color: var(--yellow);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.featured-card img {
+    width: 300px;
+}
+
 .rules-content, .decks-content {
     text-align: center;
     padding: 20px;
@@ -72,4 +108,21 @@ nav ul li {
 .deck img {
     width: 100%;
     height: auto;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .trading-card-database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .featured-card img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
