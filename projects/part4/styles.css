@@ -110,6 +110,45 @@ nav ul li {
     height: auto;
 }
 
+/* Card Details Page Styling */
+.details-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+}
+
+.card-details-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-image img {
+    width: 350px;
+    height: auto;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.info-box {
+    background: #f8f8f8;
+    padding: 10px;
+    border-left: 4px solid #ffcc00;
+    text-align: left;
+}
 /* Responsive Fix for Mobile */
 @media (max-width: 768px) {
     .trading-card-database {
