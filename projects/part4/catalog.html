@@ -3,36 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Catalog - Pokémon TCG</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/PokemonTCG.png" alt="Pokémon Logo" class="logo">
+        <h1>Pokémon TCG Catalog</h1>
         <nav>
             <ul>
                 <li><a href="pokemon.html">Home</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="decks.html">Sample Decks</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
                 <li><a href="details.html">Card Details</a></li>
+                <li><a href="decks.html">Sample Decks</a></li>
+                <li><a href="rules.html">Rules & Basics</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="catalog">
-        <h1>Trading Card Database</h1>
-        <form>
-            <label>Card Name:</label>
-            <input type="text" placeholder="Enter card name">
-            <label>Energy Type:</label>
-            <select>
-                <option>Fire</option>
-                <option>Water</option>
-                <option>Electric</option>
-            </select>
-        </form>
-        <img src="articuno-card.png" alt="Articuno EX Card" class="card-image">
+    <main class="catalog-container">
+        <section class="category">
+            <h2>Card Types</h2>
+            <div class="card-type-list">
+                <div class="card-type">
+                    <h3>Pokémon Cards</h3>
+                    <p>Used to battle against opponents. Can evolve and have different abilities.</p>
+                </div>
+                <div class="card-type">
+                    <h3>Trainer Cards</h3>
+                    <p>Help players in different ways, such as drawing extra cards or healing Pokémon.</p>
+                </div>
+                <div class="card-type">
+                    <h3>Energy Cards</h3>
+                    <p>Provide the energy needed to use attacks and abilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Pokémon Types</h2>
+            <div class="pokemon-types">
+                <div class="type fire">Fire</div>
+                <div class="type water">Water</div>
+                <div class="type grass">Grass</div>
+                <div class="type electric">Electric</div>
+                <div class="type psychic">Psychic</div>
+                <div class="type fighting">Fighting</div>
+                <div class="type dark">Dark</div>
+                <div class="type metal">Metal</div>
+                <div class="type fairy">Fairy</div>
+                <div class="type dragon">Dragon</div>
+                <div class="type normal">Normal</div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Trainer Card Types</h2>
+            <ul class="trainer-list">
+                <li><strong>Item Cards:</strong> Can be played anytime to provide an effect.</li>
+                <li><strong>Supporter Cards:</strong> Powerful effects but only one can be played per turn.</li>
+                <li><strong>Stadium Cards:</strong> Stay in play and affect both players.</li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <h2>Energy Card Types</h2>
+            <ul class="energy-list">
+                <li><strong>Basic Energy:</strong> Fire, Water, Grass, Electric, Psychic, Fighting, Dark, Metal, Fairy.</li>
+                <li><strong>Special Energy:</strong> Provides multiple energy types or special effects.</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
