@@ -171,8 +171,19 @@ nav ul li a {
     cursor: pointer;
 }
 
+.featured-card {
+    display: flex;
+    justify-content: center; /* Centers the image */
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Ensure image does not push too far right */
 .featured-card img {
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--gray);
 }
 
 .rules-content, .decks-content {
