@@ -122,6 +122,11 @@ nav ul li a {
     background: var(--white);
 }
 
+.featured-card {
+        justify-content: center;
+    }
+}
+
 .featured-card img {
     width: 100%;
     height: auto;
