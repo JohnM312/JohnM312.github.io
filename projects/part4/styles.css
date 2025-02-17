@@ -132,6 +132,45 @@ nav ul li a {
     height: auto;
 }
 
+/* Featured Cards Section */
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Card Container */
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid var(--gray);
+    padding: 15px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust Card Image Size */
+.card img {
+    width: 80%; /* Reduce image size to allow space for text */
+    height: auto;
+    max-height: 200px; /* Limit height to prevent excessive space usage */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Card Description Formatting */
+.card p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+}
 /* Mobile Responsive for Home */
 @media (max-width: 768px) {
     .top-row {
