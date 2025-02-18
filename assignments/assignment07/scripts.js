@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
 
         // Add stick figure
         let stickFigure = document.createElement("img");
-        stickFigure.src = "1.png"; // Initial position image
+        stickFigure.src = "images/left.png"; // Initial position image
         stickFigure.id = "stickFigure";
         container.appendChild(stickFigure);
 
@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
         let figure = document.getElementById("stickFigure");
         let position = 0;
         let isLeft = true;
-        let images = ["2.png", "3 (1).png"]; // Alternating images
+        let images = ["images/right.png", "images/left.png"]; // Alternating images
 
         let climbInterval = setInterval(function () {
             if (position >= 9) {
