@@ -191,46 +191,45 @@ nav ul li a {
     padding: 20px;
 }
 
+/* Adjust Featured Card Layout in Catalog Page */
 .trading-card-database {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
-.search-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.card-types {
-    display: flex;
-    gap: 10px;
-}
-
-.search-button {
-    background-color: var(--yellow);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
+/* Move the Card Image to the Left */
 .featured-card {
-    display: flex;
-    justify-content: center; /* Centers the image */
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
+    order: -1; /* Moves the image to the left */
+    flex: 1;
+    max-width: 350px; /* Increase size slightly */
 }
 
-/* Ensure image does not push too far right */
+/* Ensure Image Fills Container */
 .featured-card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border: 2px solid var(--gray);
+    max-height: 450px; /* Increase height slightly for better visibility */
+    object-fit: contain;
+}
+
+/* Search and Filters Section */
+.search-container {
+    flex: 2; /* Ensures it takes more space compared to the image */
+    min-width: 300px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .trading-card-database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card {
+        max-width: 80%;
+    }
 }
 
 .rules-content, .decks-content {
