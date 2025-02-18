@@ -1,1 +1,55 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5ed;
+}
+
+h1 {
+    color: #5d7f82;
+}
+
+h2 {
+    color: #d08080;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #5d7f82;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #446161;
+}
+
+#stairContainer {
+    margin: 20px auto;
+    position: relative;
+    width: 100px;
+    height: 400px;
+}
+
+.stair {
+    width: 100px;
+    height: 40px;
+    border-top: 5px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#stickFigure {
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+#climbStairs {
+    display: none;
+}
 
