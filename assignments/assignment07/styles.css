@@ -28,25 +28,25 @@ button:hover {
 #stairContainer {
     margin: 20px auto;
     position: relative;
-    width: 120px;  /* Increased width for better visibility */
+    width: 120px;
     height: 400px;
-    border-left: 5px solid black;  /* Left border for stair rails */
-    border-right: 5px solid black; /* Right border for stair rails */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    display: flex;
+    flex-direction: column-reverse; /* Makes the stairs stack from bottom to top */
+    align-items: center;
 }
 
 .stair {
     width: 100px;
     height: 40px;
-    background-color: black;  /* Stairs now have a black color */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: black;
 }
 
 #stickFigure {
     width: 50px;
     position: absolute;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
 }
