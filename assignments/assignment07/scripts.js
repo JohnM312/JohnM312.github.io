@@ -27,7 +27,8 @@ document.getElementById("climbStairs").addEventListener("click", function () {
     let climbInterval = setInterval(function () {
         if (position >= 9) {
             clearInterval(climbInterval);
-        } else {
+        } 
+        else {
             position++;
             figure.style.bottom = position * 40 + "px";
             figure.src = images[+isLeft]; // Toggle between images
