@@ -1,11 +1,11 @@
-// Wait until the entire page has loaded
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const drawButton = document.getElementById("drawStairs");
     const climbButton = document.getElementById("climbStairs");
     const container = document.getElementById("stairContainer");
 
     drawButton.addEventListener("click", function () {
         container.innerHTML = ""; // Clear previous stairs
+
         for (let i = 0; i < 10; i++) {
             let stair = document.createElement("div");
             stair.classList.add("stair");
@@ -41,9 +41,3 @@ window.addEventListener("load", function () {
         }, 500);
     });
 });
-
-// Dynamically inject the script file into the page
-const script = document.createElement("script");
-script.src = "script.js";
-document.body.appendChild(script);
-
