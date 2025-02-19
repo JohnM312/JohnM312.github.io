@@ -6,16 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     drawButton.addEventListener("click", function () {
         container.innerHTML = ""; // Clear previous stairs
 
+        // Create 10 stairs
         for (let i = 0; i < 10; i++) {
             let stair = document.createElement("div");
             stair.classList.add("stair");
-            stair.style.bottom = (i * 40) + "px";
             container.appendChild(stair);
         }
 
         // Add stick figure
         let stickFigure = document.createElement("img");
-        stickFigure.src = "images/right.png"; // Initial position image
+        stickFigure.src = "1.png"; // Make sure this file exists in your project folder
         stickFigure.id = "stickFigure";
         container.appendChild(stickFigure);
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let figure = document.getElementById("stickFigure");
         let position = 0;
         let isLeft = true;
-        let images = ["images/left.png", "images/right.png"]; // Alternating images
+        let images = ["2.png", "3 (1).png"]; // Toggle images
 
         let climbInterval = setInterval(function () {
             if (position >= 9) {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 position++;
                 figure.style.bottom = position * 40 + "px";
-                figure.src = images[+isLeft]; // Toggle between images
+                figure.src = images[+isLeft]; // Swap images
                 isLeft = !isLeft;
             }
         }, 500);
