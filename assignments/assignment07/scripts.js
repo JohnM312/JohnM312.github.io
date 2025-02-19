@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Add stick figure
         let stickFigure = document.createElement("img");
-        stickFigure.src = "1.png"; // Make sure this file exists in your project folder
+        stickFigure.src = "images/right.png"; // Make sure this file exists in your project folder
         stickFigure.id = "stickFigure";
         container.appendChild(stickFigure);
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let figure = document.getElementById("stickFigure");
         let position = 0;
         let isLeft = true;
-        let images = ["2.png", "3 (1).png"]; // Toggle images
+        let images = ["images/left.png", "images/right.png"]; // Toggle images
 
         let climbInterval = setInterval(function () {
             if (position >= 9) {
