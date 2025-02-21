@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stairsDiv.appendChild(stair);
         }
 
-        // Add stick figure
+        // Add stick figure if not already added
         if (!stickFigure) {
             stickFigure = document.createElement("img");
             stickFigure.src = "images/right.png"; // First climbing position
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stickFigure.style.bottom = position * 32 + "px"; // Move up
 
             // Toggle images for climbing effect
-            stickFigure.src = isLeft ? "images/left.png" : "3 (1).png";
+            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
             isLeft = !isLeft;
         }
     });
