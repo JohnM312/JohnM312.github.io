@@ -47,7 +47,7 @@ button:hover {
     align-items: center;
 }
 
-.stair {
+..stair {
     width: 100px; /* Adjusted to match vertical lines */
     height: 10px; /* Thin stairs */
     background-color: black;
