@@ -1,46 +1,45 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const drawButton = document.getElementById("drawStairs");
-    const climbButton = document.getElementById("climbStairs");
-    const stairsDiv = document.getElementById("stairs");
-    const stairContainer = document.getElementById("stairContainer");
+const drawStairsBtn = document.getElementById("drawStairsBtn");
+const climbStairsBtn = document.getElementById("climbStairsBtn");
+const stairsContainer = document.getElementById("stairsContainer");
 
-    let stickFigure;
-    let position = 0;  
-    let isLeft = true; 
+let stickFigure;
+let stepIndex = 0;
+let climbInterval;
+const steps = 10;
+const images = ["images/right.png", "images/left.png"]; // Use the uploaded images
 
-    drawButton.addEventListener("click", function () {
-        stairsDiv.innerHTML = ""; // Clear previous stairs
-        position = 0; // Reset position
+// Draw stairs function
+drawStairsBtn.addEventListener("click", () => {
+    stairsContainer.innerHTML = "";
 
-        // Generate 10 stairs
-        for (let i = 0; i < 10; i++) {
-            let stair = document.createElement("div");
-            stair.classList.add("stair");
-            stairsDiv.appendChild(stair);
+    // Create stairs
+    for (let i = 0; i < steps; i++) {
+        let stair = document.createElement("div");
+        stair.classList.add("stair");
+        stair.style.bottom = `${i * 22}px`;
+        stairsContainer.appendChild(stair);
+    }
+
+    // Add stick figure
+    stickFigure = document.createElement("img");
+    stickFigure.src = images[0];
+    stickFigure.id = "stickFigure";
+    stairsContainer.appendChild(stickFigure);
+
+    // Show climb button
+    climbStairsBtn.style.display = "block";
+});
+
+// Climb stairs function
+climbStairsBtn.addEventListener("click", () => {
+    stepIndex = 0;
+    climbInterval = setInterval(() => {
+        if (stepIndex >= steps) {
+            clearInterval(climbInterval);
+        } else {
+            stickFigure.style.bottom = `${stepIndex * 22}px`;
+            stickFigure.src = images[stepIndex % 2]; // Alternate images for movement
+            stepIndex++;
         }
-
-        // Add stick figure only if it doesn't exist
-        if (!stickFigure) {
-            stickFigure = document.createElement("img");
-            stickFigure.src = "images/right.png"; // Initial climbing pose
-            stickFigure.id = "stickFigure";
-            stairContainer.appendChild(stickFigure);
-        }
-
-        stickFigure.style.bottom = "0px"; // Reset figure to bottom
-
-        // Show climb button
-        climbButton.style.display = "block";
-    });
-
-    climbButton.addEventListener("click", function () {
-        if (position < 9) {  
-            position++;
-            stickFigure.style.bottom = position * 32 + "px"; // Move up step by step
-
-            // Toggle between climbing images
-            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
-            isLeft = !isLeft;
-        }
-    });
+    }, 500);
 });
