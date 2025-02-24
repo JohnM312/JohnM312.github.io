@@ -11,17 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
     drawButton.addEventListener("click", function () {
         stairsDiv.innerHTML = ""; // Clear old stairs
         position = 0; // Reset position
-
+  
+    function drawStairs() {
+        let stairsContainer = document.getElementById("stairs-container");
+        stairsContainer.innerHTML = ""; // Clear previous stairs
+        
         console.log("Drawing stairs...");
 
         // Generate 10 stairs
-        for (let i = 0; i < 10; i++) {
-            let stair = document.createElement("div");
-            stair.classList.add("stair");
-            stairsDiv.appendChild(stair);
+    for (let i = 0; i < 10; i++) {
+        let stair = document.createElement("div");
+        stair.className = "stair";
+        stair.style.bottom = (i * 40) + "px"; // Increased spacing
+        stairsContainer.appendChild(stair);
         }
-
-        console.log("Stairs added:", stairsDiv.children.length);
+    
+    document.getElementById("climb-button").style.display = "block";
+    document.getElementById("stick-figure").style.display = "block";
 
         // Add stick figure only if it doesn't exist
         if (!stickFigure) {
