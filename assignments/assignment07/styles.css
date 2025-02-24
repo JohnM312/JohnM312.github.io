@@ -48,10 +48,12 @@ button:hover {
 }
 
 .stair {
-    width: 80px; /* Keep thinner stairs */
-    height: 15px; /* Height of each stair */
+    width: 100px; /* Adjusted to match vertical lines */
+    height: 10px; /* Thin stairs */
     background-color: black;
-    margin: 8px 0; /* Increased spacing between stairs */
+    position: absolute;
+    left: 50%; /* Centering */
+    transform: translateX(-50%);
 }
 
 
