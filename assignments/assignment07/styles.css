@@ -4,17 +4,25 @@ body {
     background-color: #f4f4f4;
 }
 
-#stairsContainer {
+#stairsWrapper {
     position: relative;
     display: inline-block;
     margin-top: 20px;
+}
+
+#stairsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 220px;
 }
 
 .stair {
     width: 100px;
     height: 20px;
     background-color: black;
-    margin: 2px auto;
+    margin: 2px 0;
 }
 
 #stickFigure {
