@@ -1,61 +1,46 @@
-const drawStairsButton = document.getElementById('drawStairsButton');
-const climbStairsButton = document.getElementById('climbStairsButton');
-const stairsContainer = document.getElementById('stairs');
-const stickFigure = document.getElementById('stickFigure');
+document.addEventListener("DOMContentLoaded", function () {
+    const drawButton = document.getElementById("drawStairs");
+    const climbButton = document.getElementById("climbStairs");
+    const stairsDiv = document.getElementById("stairs");
+    const stairContainer = document.getElementById("stairContainer");
 
-let stairCount = 10;  // Number of stairs
-let treadHeight = 20; // Matching CSS .tread height
-let climbingInterval = null; // Variable to hold the interval ID
-let currentStair = 0; // Keeps track of the stair the stick figure is climbing
-let isRightImage = true;
+    let stickFigure;
+    let position = 0;
+    let isLeft = true;
 
-function drawStairs() {
-    stairsContainer.innerHTML = ''; // Clear existing stairs
+    drawButton.addEventListener("click", function () {
+        stairsDiv.innerHTML = ""; // Clear old stairs
+        position = 0; // Reset position
 
-    for (let i = 0; i < stairCount; i++) {
-        const tread = document.createElement('div');
-        tread.classList.add('tread');
-        tread.style.top = (stairCount - i - 1) * treadHeight + 'px'; // Position from the bottom up
-        stairsContainer.appendChild(tread);
-    }
-
-    climbStairsButton.style.display = 'block';
-    stickFigure.style.display = 'block'; // show stick figure
-
-    // Initial position of the stick figure
-    stickFigure.style.top = '0px'; // Bottom stair
-    stickFigure.src = 'images/right.png';
-}
-
-
-function climbStairs() {
-    const climbSpeed = 2; // Adjust for climb speed
-
-    climbingInterval = setInterval(() => {
-        // Calculate the target Y position for the current stair
-        let targetY = (stairCount - currentStair -1) * treadHeight;
-
-
-        if (parseInt(stickFigure.style.top) < targetY)
-        {
-            clearInterval(climbingInterval);
-            return;
+        // Generate 10 stairs
+        for (let i = 0; i < 10; i++) {
+            let stair = document.createElement("div");
+            stair.classList.add("stair");
+            stairsDiv.appendChild(stair);
         }
 
-
-        stickFigure.style.top = (parseInt(stickFigure.style.top) + climbSpeed) + 'px';
-
-        stickFigure.src = isRightImage ? 'images/left.png' : 'images/right.png';
-        isRightImage = !isRightImage;
-
-        if (parseInt(stickFigure.style.top) >= (stairCount - 1) * treadHeight) {
-            clearInterval(climbingInterval);
-            console.log("Reached the top!");
+        // Add stick figure only if it doesn't exist
+        if (!stickFigure) {
+            stickFigure = document.createElement("img");
+            stickFigure.src = "images/right.png"; // Initial climbing pose
+            stickFigure.id = "stickFigure";
+            stairContainer.appendChild(stickFigure);
         }
 
-    }, 20); // Animation interval (adjust for smoothness)
-}
+        stickFigure.style.bottom = "0px"; // Reset figure to bottom
 
+        // Show climb button
+        climbButton.style.display = "block";
+    });
 
-drawStairsButton.addEventListener('click', drawStairs);
-climbStairsButton.addEventListener('click', climbStairs);
+    climbButton.addEventListener("click", function () {
+        if (position < 9) {  
+            position++;
+            stickFigure.style.bottom = position * 32 + "px"; // Move up step by step
+
+            // Toggle between climbing images
+            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
+            isLeft = !isLeft;
+        }
+    });
+});
