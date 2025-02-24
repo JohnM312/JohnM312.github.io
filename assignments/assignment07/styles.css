@@ -10,12 +10,14 @@ h1 {
 
 button {
     padding: 10px;
-    margin: 10px auto;
+    margin: 10px;
     border: none;
     background-color: #5d7f82;
     color: white;
     cursor: pointer;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {
@@ -25,34 +27,37 @@ button:hover {
 #stairContainer {
     position: relative;
     margin: 20px auto;
-    width: 180px; /* Make it a bit narrower */
+    width: 160px; /* Reduced width to match screenshot */
     height: 400px;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #stairs {
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .stair {
-    width: 80px;  /* Make the stair thinner */
-    height: 10px;  /* Reduce thickness */
+    width: 80px; /* Reduced width for thinner stairs */
+    height: 15px; /* Reduced height to look more like the screenshot */
     background-color: black;
     margin: 2px 0;
 }
 
-/* Ensure Climb Stairs button is centered */
-#climbStairs {
-    margin-left: auto;
-    margin-right: auto;
+#stickFigure {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the stick figure */
+    width: 30px; /* Adjusted size to fit better */
 }
