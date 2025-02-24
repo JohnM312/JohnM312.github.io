@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         climbButton.style.display = "block"; // Show climb button
     });
 
-    climbButton.addEventListener("click", function () {
-        if (position < 9) {  
-            position++;
-            stickFigure.style.bottom = position * 17 + "px"; // Adjust movement to match thinner stairs
+   climbButton.addEventListener("click", function () {
+    if (position < 9) {  
+        position++;
+        stickFigure.style.bottom = position * 25 + "px"; /* INCREASED CLIMB HEIGHT */
 
-            // Toggle between climbing images
-            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
-            isLeft = !isLeft;
-        }
+        // Toggle between climbing images
+        stickFigure.src = isLeft ? "2.png" : "3 (1).png";
+        isLeft = !isLeft;
+    }
     });
 });
