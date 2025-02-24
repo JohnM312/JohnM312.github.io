@@ -14,12 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("Drawing stairs...");
 
-        // Generate 10 stairs
-        for (let i = 0; i < 10; i++) {
-            let stair = document.createElement("div");
-            stair.classList.add("stair");
-            stairsDiv.appendChild(stair);
-        }
+       function drawStairs() {
+    let stairsContainer = document.getElementById("stairs-container");
+    stairsContainer.innerHTML = ""; // Clear previous stairs
+
+    for (let i = 0; i < 10; i++) {
+        let stair = document.createElement("div");
+        stair.className = "stair";
+        stair.style.bottom = (i * 40) + "px"; // Increased spacing
+        stairsContainer.appendChild(stair);
+    }
+
+    document.getElementById("climb-button").style.display = "block";
+    document.getElementById("stick-figure").style.display = "block";
+}
 
         console.log("Stairs added:", stairsDiv.children.length);
 
