@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stickFigure.style.bottom = position * 25 + "px"; /* INCREASED CLIMB HEIGHT */
 
         // Toggle between climbing images
-        stickFigure.src = isLeft ? "2.png" : "3 (1).png";
+        stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
         isLeft = !isLeft;
     }
     });
