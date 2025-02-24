@@ -1,44 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
     const drawButton = document.getElementById("drawStairs");
     const climbButton = document.getElementById("climbStairs");
-    const stairContainer = document.getElementById("stairContainer");
     const stairsDiv = document.getElementById("stairs");
+    const stairContainer = document.getElementById("stairContainer");
 
-    let position = 0;  // Stick figure's position
-    let isLeft = true; // Track climbing direction
-    let stickFigure;   // Store stick figure reference
+    let stickFigure;
+    let position = 0;
+    let isLeft = true;
 
     drawButton.addEventListener("click", function () {
         stairsDiv.innerHTML = ""; // Clear old stairs
-        position = 0; // Reset climbing
+        position = 0; // Reset position
 
-        // Create 10 stairs
+        console.log("Drawing stairs...");
+
+        // Generate 10 stairs
         for (let i = 0; i < 10; i++) {
             let stair = document.createElement("div");
             stair.classList.add("stair");
             stairsDiv.appendChild(stair);
         }
 
-        // Add stick figure if not already added
+        console.log("Stairs added:", stairsDiv.children.length);
+
+        // Add stick figure only if it doesn't exist
         if (!stickFigure) {
             stickFigure = document.createElement("img");
-            stickFigure.src = "images/right.png"; // First climbing position
+            stickFigure.src = "images/right.png"; // Initial climbing pose
             stickFigure.id = "stickFigure";
             stairContainer.appendChild(stickFigure);
         }
 
-        stickFigure.style.bottom = "0px"; // Reset to bottom
-
-        // Show climb button
-        climbButton.style.display = "block";
+        stickFigure.style.bottom = "0px"; // Reset figure to bottom
+        climbButton.style.display = "block"; // Show climb button
     });
 
     climbButton.addEventListener("click", function () {
-        if (position < 9) {  // Ensure it doesn’t climb too high
+        if (position < 9) {  
             position++;
-            stickFigure.style.bottom = position * 32 + "px"; // Move up
+            stickFigure.style.bottom = position * 17 + "px"; // Adjust movement to match thinner stairs
 
-            // Toggle images for climbing effect
+            // Toggle between climbing images
             stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
             isLeft = !isLeft;
         }
