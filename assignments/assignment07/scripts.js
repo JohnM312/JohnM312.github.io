@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         position = 0; // Reset position
 
         console.log("Drawing stairs...");
-        
-    for (let i = 0; i < 10; i++) {
-        let stair = document.createElement("div");
-        stair.className = "stair";
-        stair.style.bottom = (i * 40) + "px"; // Increased spacing
-        stairsContainer.appendChild(stair);
-    }
+
+        // Generate 10 stairs
+        for (let i = 0; i < 10; i++) {
+            let stair = document.createElement("div");
+            stair.classList.add("stair");
+            stairsDiv.appendChild(stair);
+        }
 
         console.log("Stairs added:", stairsDiv.children.length);
 
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         climbButton.style.display = "block"; // Show climb button
     });
 
-   climbButton.addEventListener("click", function () {
-    if (position < 9) {  
-        position++;
-        stickFigure.style.bottom = position * 40 + "px"; // Moves to next stair
+    climbButton.addEventListener("click", function () {
+        if (position < 9) {  
+            position++;
+            stickFigure.style.bottom = position * 40 + "px"; // Moves to next stair
 
-        // Toggle stick figure image
-        stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
-        isLeft = !isLeft;
-    }
+            // Toggle between climbing images
+            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
+            isLeft = !isLeft;
+        }
     });
 });
