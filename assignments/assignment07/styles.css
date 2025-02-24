@@ -48,11 +48,12 @@ button:hover {
 }
 
 .stair {
-    width: 80px; /* Reduced width for thinner stairs */
-    height: 15px; /* Reduced height to look more like the screenshot */
+    width: 80px; /* Keep stairs thin */
+    height: 15px; /* Keep stairs small */
     background-color: black;
-    margin: 2px 0;
+    margin-top: 10px; /* INCREASED SPACING BETWEEN EACH STEP */
 }
+
 
 #stickFigure {
     position: absolute;
