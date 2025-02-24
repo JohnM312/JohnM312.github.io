@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         climbButton.style.display = "block"; // Show climb button
     });
 
-  climbButton.addEventListener("click", function () {
-    if (position < 9) {  
-        position++;
-        stickFigure.style.bottom = position * 30 + "px"; // Increased step height
+    climbButton.addEventListener("click", function () {
+        if (position < 9) {  
+            position++;
+            stickFigure.style.bottom = position * 17 + "px"; // Adjust movement to match thinner stairs
 
-        // Toggle between climbing images
-        stickFigure.src = isLeft ? "images/left.png : "images/right.png";
-        isLeft = !isLeft;
-    }
+            // Toggle between climbing images
+            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
+            isLeft = !isLeft;
+        }
     });
 });
