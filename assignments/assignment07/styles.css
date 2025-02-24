@@ -47,13 +47,5 @@ button:hover {
     width: 120px;
     height: 30px;
     background-color: black;
-    margin-top: 2px;
-}
-
-#stickFigure {
-    width: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    transition: bottom 0.3s ease-in-out;
+    margin: 2px 0;
 }
