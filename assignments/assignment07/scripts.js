@@ -1,54 +1,61 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const drawButton = document.getElementById("drawStairs");
-    const climbButton = document.getElementById("climbStairs");
-    const stairsDiv = document.getElementById("stairs");
-    const stairContainer = document.getElementById("stairContainer");
+const drawStairsButton = document.getElementById('drawStairsButton');
+const climbStairsButton = document.getElementById('climbStairsButton');
+const stairsContainer = document.getElementById('stairs');
+const stickFigure = document.getElementById('stickFigure');
 
-    let stickFigure;
-    let position = 0;
-    let isLeft = true;
+let stairCount = 10;  // Number of stairs
+let treadHeight = 20; // Matching CSS .tread height
+let climbingInterval = null; // Variable to hold the interval ID
+let currentStair = 0; // Keeps track of the stair the stick figure is climbing
+let isRightImage = true;
 
-    drawButton.addEventListener("click", function () {
-        stairsDiv.innerHTML = ""; // Clear old stairs
-        position = 0; // Reset position
+function drawStairs() {
+    stairsContainer.innerHTML = ''; // Clear existing stairs
 
-        // Debugging: Console log to check if the function is running
-        console.log("Drawing stairs...");
+    for (let i = 0; i < stairCount; i++) {
+        const tread = document.createElement('div');
+        tread.classList.add('tread');
+        tread.style.top = (stairCount - i - 1) * treadHeight + 'px'; // Position from the bottom up
+        stairsContainer.appendChild(tread);
+    }
 
-        // Generate 10 stairs
-        for (let i = 0; i < 10; i++) {
-            let stair = document.createElement("div");
-            stair.classList.add("stair");
-            stairsDiv.appendChild(stair);
+    climbStairsButton.style.display = 'block';
+    stickFigure.style.display = 'block'; // show stick figure
+
+    // Initial position of the stick figure
+    stickFigure.style.top = '0px'; // Bottom stair
+    stickFigure.src = 'images/right.png';
+}
+
+
+function climbStairs() {
+    const climbSpeed = 2; // Adjust for climb speed
+
+    climbingInterval = setInterval(() => {
+        // Calculate the target Y position for the current stair
+        let targetY = (stairCount - currentStair -1) * treadHeight;
+
+
+        if (parseInt(stickFigure.style.top) < targetY)
+        {
+            clearInterval(climbingInterval);
+            return;
         }
 
-        // Check if stairs actually exist
-        console.log("Stairs added:", stairsDiv.children.length);
 
-        // Add stick figure only if it doesn't exist
-        if (!stickFigure) {
-            stickFigure = document.createElement("img");
-            stickFigure.src = "images/right.png"; // Initial climbing pose
-            stickFigure.id = "stickFigure";
-            stairContainer.appendChild(stickFigure);
+        stickFigure.style.top = (parseInt(stickFigure.style.top) + climbSpeed) + 'px';
+
+        stickFigure.src = isRightImage ? 'images/left.png' : 'images/right.png';
+        isRightImage = !isRightImage;
+
+        if (parseInt(stickFigure.style.top) >= (stairCount - 1) * treadHeight) {
+            clearInterval(climbingInterval);
+            console.log("Reached the top!");
         }
 
-        stickFigure.style.position = "absolute";
-        stickFigure.style.bottom = "0px"; // Reset figure to bottom
-        stickFigure.style.left = "30px"; // Ensure figure is inside stairs
+    }, 20); // Animation interval (adjust for smoothness)
+}
 
-        // Show climb button
-        climbButton.style.display = "block";
-    });
 
-    climbButton.addEventListener("click", function () {
-        if (position < 9) {  
-            position++;
-            stickFigure.style.bottom = position * 32 + "px"; // Move up step by step
-
-            // Toggle between climbing images
-            stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
-            isLeft = !isLeft;
-        }
-    });
-});
+drawStairsButton.addEventListener('click', drawStairs);
+climbStairsButton.addEventListener('click', climbStairs);
