@@ -11,23 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
     drawButton.addEventListener("click", function () {
         stairsDiv.innerHTML = ""; // Clear old stairs
         position = 0; // Reset position
-  
-    function drawStairs() {
-        let stairsContainer = document.getElementById("stairs-container");
-        stairsContainer.innerHTML = ""; // Clear previous stairs
-        
+
+        // Debugging: Console log to check if the function is running
         console.log("Drawing stairs...");
 
         // Generate 10 stairs
-    for (let i = 0; i < 10; i++) {
-        let stair = document.createElement("div");
-        stair.className = "stair";
-        stair.style.bottom = (i * 40) + "px"; // Increased spacing
-        stairsContainer.appendChild(stair);
+        for (let i = 0; i < 10; i++) {
+            let stair = document.createElement("div");
+            stair.classList.add("stair");
+            stairsDiv.appendChild(stair);
         }
-    
-    document.getElementById("climb-button").style.display = "block";
-    document.getElementById("stick-figure").style.display = "block";
+
+        // Check if stairs actually exist
+        console.log("Stairs added:", stairsDiv.children.length);
 
         // Add stick figure only if it doesn't exist
         if (!stickFigure) {
@@ -37,14 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
             stairContainer.appendChild(stickFigure);
         }
 
+        stickFigure.style.position = "absolute";
         stickFigure.style.bottom = "0px"; // Reset figure to bottom
-        climbButton.style.display = "block"; // Show climb button
+        stickFigure.style.left = "30px"; // Ensure figure is inside stairs
+
+        // Show climb button
+        climbButton.style.display = "block";
     });
 
     climbButton.addEventListener("click", function () {
         if (position < 9) {  
             position++;
-            stickFigure.style.bottom = position * 40 + "px"; // Moves to next stair
+            stickFigure.style.bottom = position * 40 + "px"; // Move up step by step
 
             // Toggle between climbing images
             stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
