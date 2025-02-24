@@ -1,44 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
     const drawButton = document.getElementById("drawStairs");
     const climbButton = document.getElementById("climbStairs");
-    const stairsDiv = document.getElementById("stairs");
     const stairContainer = document.getElementById("stairContainer");
+    const stairsDiv = document.getElementById("stairs");
 
-    let stickFigure;
-    let position = 0;
-    let isLeft = true;
+    let position = 0;  // Stick figure's position
+    let isLeft = true; // Track climbing direction
+    let stickFigure;   // Store stick figure reference
 
     drawButton.addEventListener("click", function () {
         stairsDiv.innerHTML = ""; // Clear old stairs
-        position = 0; // Reset position
+        position = 0; // Reset climbing
 
-        // Generate 10 stairs
+        // Create 10 stairs
         for (let i = 0; i < 10; i++) {
             let stair = document.createElement("div");
             stair.classList.add("stair");
             stairsDiv.appendChild(stair);
         }
 
-        // Add stick figure only if it doesn't exist
+        // Add stick figure if not already added
         if (!stickFigure) {
             stickFigure = document.createElement("img");
-            stickFigure.src = "images/right.png"; // Initial climbing pose
+            stickFigure.src = "images/right.png"; // First climbing position
             stickFigure.id = "stickFigure";
             stairContainer.appendChild(stickFigure);
         }
 
-        stickFigure.style.bottom = "0px"; // Reset figure to bottom
+        stickFigure.style.bottom = "0px"; // Reset to bottom
 
         // Show climb button
         climbButton.style.display = "block";
     });
 
     climbButton.addEventListener("click", function () {
-        if (position < 9) {  
+        if (position < 9) {  // Ensure it doesn’t climb too high
             position++;
-            stickFigure.style.bottom = position * 32 + "px"; // Move up step by step
+            stickFigure.style.bottom = position * 32 + "px"; // Move up
 
-            // Toggle between climbing images
+            // Toggle images for climbing effect
             stickFigure.src = isLeft ? "images/left.png" : "images/right.png";
             isLeft = !isLeft;
         }
