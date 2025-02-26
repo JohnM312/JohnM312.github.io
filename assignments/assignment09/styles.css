@@ -53,16 +53,49 @@ h2 {
     align-items: center;
 }
 
+/* Modal styling */
 .modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
-    text-align: center;
+    width: 500px;
+    text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease-in-out;
+    position: relative;
 }
 
+.modal-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.modal-text h2 {
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+.modal-text p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-image {
+    flex: 1;
+    text-align: right;
+}
+
+.modal-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/* Close button */
 .close {
     font-size: 24px;
     cursor: pointer;
@@ -72,12 +105,6 @@ h2 {
     color: #333;
 }
 
-.modal-content img {
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
 
 /* ANIMATIONS */
 @keyframes fadeIn {
