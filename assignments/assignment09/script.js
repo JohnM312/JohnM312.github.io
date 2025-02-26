@@ -31,11 +31,11 @@ class Pizza {
 
 // Create pizza objects
 const pizzas = [
-    new Pizza("Hawaiian", "Ham, Pineapple", "Tomato", "Mozzarella", 18.5, "hawaiian.png"),
-    new Pizza("Buffalo Chicken Ranch", "Chicken, Ranch, Buffalo Sauce", "Ranch", "Cheddar", 20.3, "buffalo.png"),
-    new Pizza("Margarita", "Basil, Tomatoes", "Extra Virgin Olive Oil", "Fresh Mozzarella", 19.2, "margarita.png"),
-    new Pizza("Pepperoni", "Pepperoni, Herbs", "Tomato", "Mozzarella", 17.8, "pepperoni.png"),
-    new Pizza("Veggie", "Mushrooms, Olives, Peppers", "Tomato", "Mozzarella", 16.9, "veggie.png"),
+    new Pizza("Hawaiian", "Ham, Pineapple", "Tomato", "Mozzarella", 18.5, "images/hawaiian pizza.png"),
+    new Pizza("Buffalo Chicken Ranch", "Chicken, Ranch, Buffalo Sauce", "Ranch", "Cheddar", 20.3, "images/buffalo chicken ranch pizza.png"),
+    new Pizza("Margarita", "Basil, Tomatoes", "Extra Virgin Olive Oil", "Fresh Mozzarella", 19.2, "images/margarita pizza.png"),
+    new Pizza("Pepperoni", "Pepperoni, Herbs", "Tomato", "Mozzarella", 17.8, "images/pepperoni pizza.png"),
+    new Pizza("Veggie", "Mushrooms, Olives, Peppers", "Tomato", "Mozzarella", 16.9, "images/veggie pizza.png"),
 ];
 
 // Populate pizza list
