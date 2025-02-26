@@ -71,42 +71,6 @@ nav ul li a {
         margin: 10px 0;
     }
 }
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: var(--white);
-    cursor: pointer;
-}
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
-
 /* Home Page Layout */
 .home-container {
     text-align: center;
