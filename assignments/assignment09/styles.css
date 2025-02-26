@@ -16,6 +16,35 @@ h1 {
 h2 {
     color: #E74C3C;
 }
+.pizza-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Individual pizza item */
+.pizza-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.pizza-item:hover {
+    transform: scale(1.05);
+}
+
+.pizza-item h3 {
+    color: #333;
+    font-size: 18px;
+}
+
 /* Modal background */
 .modal {
     display: none; /* Hidden by default */
