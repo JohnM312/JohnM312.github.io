@@ -1,0 +1,152 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #ccc;
+    --red: #d32f2f;
+    --yellow: #ffcc00;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: var(--red);
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--red);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Home Page */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.home-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+}
+
+/* Featured Cards */
+.featured-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+    border: 1px solid var(--gray);
+    padding: 15px;
+    background: var(--white);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Catalog Page */
+.catalog-container {
+    padding: 20px;
+}
+
+.trading-card-database {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-types {
+    display: flex;
+    gap: 10px;
+}
+
+.featured-card img {
+    width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .trading-card-database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card img {
+        width: 100%;
+    }
+}
