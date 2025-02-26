@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Pokémon Logo" class="logo">
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules/Basics</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="home-container">
+    <div class="home-column">
+        <h2>Introduction</h2>
+        <p>Welcome to the Pokémon Trading Card Game! Learn the basics, build decks, and battle!</p>
+    </div>
+    <div class="home-column">
+        <h2>How to Play</h2>
+        <p>Discover how to set up a game, play your cards, and win battles!</p>
+    </div>
+</div>
+
+<h2 class="featured-title">Featured Cards</h2>
+<div class="featured-cards">
+    <div class="card">
+        <img src="venusaur.png" alt="Venusaur EX">
+        <p><strong>Venusaur EX:</strong> A powerful Grass-type Pokémon with healing abilities.</p>
+    </div>
+    <div class="card">
+        <img src="pikachu.png" alt="Pikachu V">
+        <p><strong>Pikachu V:</strong> A fan-favorite Electric-type Pokémon with high-speed moves.</p>
+    </div>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
