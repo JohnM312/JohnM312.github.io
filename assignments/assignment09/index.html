@@ -5,35 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+
     <h1>Assignment 9</h1>
     <h2>Classes</h2>
 
-    <div class="menu">
-        <div class="pizza-card" onclick="openModal('Hawaiian', 'images/hawaiian pizza.png', 'A delicious blend of ham and pineapple.')">
-            <img src="images/hawaiian pizza.png" alt="Hawaiian">
-            <p>Hawaiian</p>
-        </div>
+    <div id="pizza-container" class="pizza-grid"></div>
 
-        <div class="pizza-card" onclick="openModal('Pepperoni', 'images/pepperoni pizza.png', 'Classic pepperoni with rich tomato sauce.')">
-            <img src="images/pepperoni pizza.png" alt="Pepperoni">
-            <p>Pepperoni</p>
-        </div>
-
-        <div class="pizza-card" onclick="openModal('Veggie', 'images/veggie pizza.png', 'A mix of fresh vegetables.')">
-            <img src="images/veggie pizza.png" alt="Veggie">
-            <p>Veggie</p>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title"></h2>
-            <img id="modal-image" src="" alt="Pizza Image">
-            <p id="modal-description"></p>
+    <!-- Modal Dialog -->
+    <div id="pizzaModal" class="w3-modal" onclick="closeModal()">
+        <div class="w3-modal-content modal-content">
+            <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+            <div id="modal-content"></div>
         </div>
     </div>
 
