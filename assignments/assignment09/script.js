@@ -43,14 +43,13 @@ const pizzaContainer = document.getElementById("pizza-container");
 pizzaContainer.innerHTML = pizzas.map(pizza => pizza.getSection()).join("");
 
 // Modal Functions
-function showModal(name) {
-    const pizza = pizzas.find(p => p.name === name);
-    if (pizza) {
-        document.getElementById("modal-content").innerHTML = pizza.getExpandedSection();
-        document.getElementById("pizzaModal").style.display = "block";
-    }
+function openModal(title, imgSrc, description) {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-image").src = imgSrc;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal").style.display = "flex";
 }
 
 function closeModal() {
-    document.getElementById("pizzaModal").style.display = "none";
+    document.getElementById("modal").style.display = "none";
 }
