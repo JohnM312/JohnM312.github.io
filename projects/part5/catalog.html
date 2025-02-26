@@ -7,52 +7,82 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="images/PokemonTCG.png" alt="Pokémon TCG Logo" class="logo">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        <nav>
+            <ul>
+                <li><a href="pokemon.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="decks.html">Sample Decks</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="details.html">Card Details</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <img src="logo.png" alt="Pokémon Logo" class="logo">
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <nav>
-        <ul id="nav-links">
-            <li><a href="pokemon.html">Home</a></li>
-            <li><a href="rules.html">Rules</a></li>
-            <li><a href="decks.html">Sample Decks</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="details.html">Card Details</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <h1>Catalog</h1>
 
-<div class="catalog-container">
-    <h1>Catalog</h1>
-    <p>Explore different types of Pokémon cards.</p>
+        <section class="trading-card-database">
+            <h2>Trading Card Database:</h2>
 
-    <div class="trading-card-database">
-        <div class="search-container">
-            <input type="text" placeholder="Search for a card">
-            <select>
-                <option>Select Pokémon Type</option>
-                <option>Fire</option>
-                <option>Water</option>
-                <option>Electric</option>
-            </select>
-            <button class="search-button">Search</button>
-        </div>
-        
-        <div class="featured-card">
-            <img src="moltres.png" alt="Moltres EX">
-        </div>
-    </div>
-</div>
+            <div class="search-container">
+                <label for="card-name">Card Name:</label>
+                <input type="text" id="card-name" placeholder="Please enter">
 
-<script>
-function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-}
-</script>
+                <label for="energy-types">Energy Types:</label>
+                <select id="energy-types">
+                    <option>Energy Types Menu</option>
+                    <option>Grass</option>
+                    <option>Fire</option>
+                    <option>Water</option>
+                    <option>Lightning</option>
+                    <option>Psychic</option>
+                    <option>Fighting</option>
+                    <option>Darkness</option>
+                    <option>Metal</option>
+                    <option>Fairy</option>
+                    <option>Dragon</option>
+                </select>
 
+                <div class="card-types">
+                    <label>Card Types:</label>
+                    <select>
+                        <option>Select Pokémon Type</option>
+                        <option>Basic</option>
+                        <option>Stage 1</option>
+                        <option>Stage 2</option>
+                        <option>EX</option>
+                        <option>GX</option>
+                        <option>V</option>
+                        <option>VSTAR</option>
+                    </select>
+
+                    <select>
+                        <option>Select Trainer - Item</option>
+                        <option>Item</option>
+                        <option>Supporter</option>
+                        <option>Stadium</option>
+                    </select>
+
+                    <select>
+                        <option>Select Energy Type</option>
+                        <option>Basic Energy</option>
+                        <option>Special Energy</option>
+                    </select>
+                </div>
+
+                <button class="search-button">Search</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="images/Zapdos EX.jpg" alt="Zapdos EX">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
