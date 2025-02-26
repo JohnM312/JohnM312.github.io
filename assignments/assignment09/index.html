@@ -7,41 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Assignment 9</h1>
-    <h2>Classes</h2>
-
-    <div class="menu">
-        <div class="pizza-card" onclick="openModal('Hawaiian', 'images/hawaiian pizza.png', 'A delicious blend of ham and pineapple.')">
-            <img src="images/hawaiian pizza.png" alt="Hawaiian">
-            <p>Hawaiian</p>
+    <div class="pizza-menu">
+        <div class="pizza-item" 
+             data-name="Pepperoni Pizza" 
+             data-ingredients="Pepperoni, tomato, oregano" 
+             data-sauce="Tomato sauce" 
+             data-cheese="Mozzarella" 
+             data-price="$17.80" 
+             data-image="images/pepperoni pizza.jpg">
+            <h3>Pepperoni Pizza</h3>
+        </div>
+        
+        <div class="pizza-item" 
+             data-name="Margarita Pizza" 
+             data-ingredients="Tomatoes, basil, olive oil" 
+             data-sauce="Tomato sauce" 
+             data-cheese="Fresh Mozzarella" 
+             data-price="$19.20" 
+             data-image="images/margarita pizza.png">
+            <h3>Margarita Pizza</h3>
+        </div>
+        
+         <div class="pizza-item" 
+             data-name="Veggie Pizza" 
+             data-ingredients="Spinach, tomatoes, mushrooms" 
+             data-sauce="Tomato sauce" 
+             data-cheese="Fresh Mozzarella" 
+             data-price="$16.90" 
+             data-image="images/veggie pizza.png">
+            <h3>Veggie Pizza</h3>
+        </div>
+        
+        <div class="pizza-item" 
+             data-name="Buffalo Chicken Ranch Pizza" 
+             data-ingredients="Chicken, ranch, buffalo" 
+             data-sauce="Tomato sauce" 
+             data-cheese="Fresh Mozzarella" 
+             data-price="$20.30" 
+             data-image="images/buffalo chicken ranch png">
+            <h3>Buffalo Chicken Ranch Pizza</h3>
         </div>
 
-        <div class="pizza-card" onclick="openModal('Pepperoni', 'images/pepperoni pizza.png', 'Classic pepperoni with rich tomato sauce.')">
-            <img src="images/pepperoni pizza.png" alt="Pepperoni">
-            <p>Pepperoni</p>
+        <div class="pizza-item" 
+             data-name="Hawaiian Pizza" 
+             data-ingredients="Pineapple, tomatoes, mushrooms" 
+             data-sauce="Tomato sauce" 
+             data-cheese="Fresh Mozzarella" 
+             data-price="$18.50" 
+             data-image="images/hawaiian pizza.png">
+            <h3>Hawaiian Pizza</h3>
         </div>
 
-        <div class="pizza-card" onclick="openModal('Veggie', 'images/veggie pizza.png', 'A mix of fresh vegetables.')">
-            <img src="images/veggie pizza.png" alt="Veggie">
-            <p>Veggie</p>
-        </div>
-        <div class="pizza-card" onclick="openModal('Margarita', 'images/margarita pizza.png', 'Gotta love margarita pizzas.')">
-            <img src="images/margarita pizza.png" alt="Margarita">
-            <p>Margarita</p>
-        </div>
-        <div class="pizza-card" onclick="openModal('Buffalo Chicken Ranch Pizza', 'images/buffalo chicken ranch pizza.png', 'A mix of chicken, ranch, and buffalo.')">
-            <img src="images/buffalo chicken ranch pizza.png" alt="Buffalo Chicken Ranch Pizza">
-            <p>Buffalo Chicken Ranch Pizza</p>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title"></h2>
-            <img id="modal-image" src="" alt="Pizza Image">
-            <p id="modal-description"></p>
+    <!-- Modal for displaying pizza details -->
+    <div id="pizzaModal" class="modal">
+        <div class="modal-container">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalContent"></div>
         </div>
     </div>
 
