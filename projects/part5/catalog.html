@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Pokémon Logo" class="logo">
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules/Basics</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="catalog-container">
+    <h1>Catalog</h1>
+    <p>Explore different types of Pokémon cards.</p>
+
+    <div class="trading-card-database">
+        <div class="search-container">
+            <input type="text" placeholder="Search for a card">
+            <select>
+                <option>Select Pokémon Type</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Electric</option>
+            </select>
+            <button class="search-button">Search</button>
+        </div>
+        
+        <div class="featured-card">
+            <img src="moltres.png" alt="Moltres EX">
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
