@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f5f5dc;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,11 +10,11 @@ body {
 }
 
 h1 {
-    color: #2C3E50;
+    color: #3e646d;
 }
 
 h2 {
-    color: #E74C3C;
+    color: #d66;
 }
 .pizza-menu {
     display: grid;
@@ -27,7 +27,7 @@ h2 {
 
 /* Individual pizza item */
 .pizza-item {
-    background: white;
+    background: #f6d7a7;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -60,7 +60,7 @@ h2 {
 
 /* Modal container */
 .modal-container {
-    background: white;
+    background: #ff7f27;
     padding: 20px;
     border-radius: 10px;
     width: 500px;
@@ -125,4 +125,8 @@ h2 {
         max-width: 250px;
         margin: auto;
     }
+    @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
 }
