@@ -1,58 +1,47 @@
-class Pizza {
-    constructor(name, ingredients, sauce, cheese, price, image) {
-        this.name = name;
-        this.ingredients = ingredients;
-        this.sauce = sauce;
-        this.cheese = cheese;
-        this.price = price;
-        this.image = image;
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    const pizzaItems = document.querySelectorAll(".pizza-item");
+    const modal = document.getElementById("pizzaModal");
+    const modalContent = document.getElementById("modalContent");
+    const closeBtn = document.getElementById("closeModal");
 
-    getSection() {
-        return `
-            <div class="pizza-box" onclick="showModal('${this.name}')">
-                <img src="images/${this.image}" alt="${this.name}">
-                <h3>${this.name}</h3>
-            </div>
-        `;
-    }
+    pizzaItems.forEach(item => {
+        item.addEventListener("click", function () {
+            const pizzaName = this.getAttribute("data-name");
+            const ingredients = this.getAttribute("data-ingredients");
+            const sauce = this.getAttribute("data-sauce");
+            const cheese = this.getAttribute("data-cheese");
+            const price = this.getAttribute("data-price");
+            const imageSrc = this.getAttribute("data-image");
 
-    getExpandedSection() {
-        return `
-            <h2>${this.name}</h2>
-            <p><strong>Ingredients:</strong> ${this.ingredients}</p>
-            <p><strong>Sauce:</strong> ${this.sauce}</p>
-            <p><strong>Cheese:</strong> ${this.cheese}</p>
-            <p><strong>Price:</strong> $${this.price}</p>
-            <img src="images/${this.image}" alt="${this.name}">
-        `;
-    }
-}
+            modalContent.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-text">
+                        <h2>${pizzaName}</h2>
+                        <p><strong>Ingredients:</strong> ${ingredients}</p>
+                        <p><strong>Sauce:</strong> ${sauce}</p>
+                        <p><strong>Cheese:</strong> ${cheese}</p>
+                        <p><strong>Price:</strong> ${price}</p>
+                    </div>
+                    <div class="modal-image">
+                        <img src="${imageSrc}" alt="${pizzaName}">
+                    </div>
+                </div>
+            `;
 
-// Create pizza objects
-const pizzas = [
-    new Pizza("Hawaiian", "Ham, Pineapple", "Tomato", "Mozzarella", 18.5, "images/hawaiian pizza.png"),
-    new Pizza("Buffalo Chicken Ranch", "Chicken, Ranch, Buffalo Sauce", "Ranch", "Cheddar", 20.3, "images/buffalo chicken ranch pizza.png"),
-    new Pizza("Margarita", "Basil, Tomatoes", "Extra Virgin Olive Oil", "Fresh Mozzarella", 19.2, "images/margarita pizza.png"),
-    new Pizza("Pepperoni", "Pepperoni, Herbs", "Tomato", "Mozzarella", 17.8, "images/pepperoni pizza.png"),
-    new Pizza("Veggie", "Mushrooms, Olives, Peppers", "Tomato", "Mozzarella", 16.9, "images/veggie pizza.png"),
-];
+            // Show the modal
+            modal.style.display = "flex";
+        });
+    });
 
-// Populate pizza list
-const pizzaContainer = document.getElementById("pizza-container");
-pizzaContainer.innerHTML = pizzas.map(pizza => pizza.getSection()).join("");
+    // Close modal when clicking "X" button
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
 
-// Modal Functions
-function openModal(title, imgSrc, ingredients, sauce, cheese, price) {
-    document.getElementById("modal-title").innerText = title;
-    document.getElementById("modal-ingredients").innerText = `Ingredients: ${ingredients}`;
-    document.getElementById("modal-sauce").innerText = `Sauce: ${sauce}`;
-    document.getElementById("modal-cheese").innerText = `Cheese: ${cheese}`;
-    document.getElementById("modal-price").innerText = `Price: $${price}`;
-    document.getElementById("modal-image").src = imgSrc;
-    document.getElementById("modal").style.display = "flex";
-}
-
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
+    // Close modal when clicking outside it
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
