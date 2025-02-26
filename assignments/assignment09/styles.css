@@ -1,7 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #FFFBEA;
+    background-color: #f5f5dc;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
