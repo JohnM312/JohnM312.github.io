@@ -1,3 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FFFBEA;
+}
+
+h1 {
+    color: #2C3E50;
+}
+
+h2 {
+    color: #E74C3C;
+}
 /* Modal background */
 .modal {
     display: none; /* Hidden by default */
