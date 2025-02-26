@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Menu</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-
     <h1>Assignment 9</h1>
     <h2>Classes</h2>
 
-    <div id="pizza-container" class="pizza-grid"></div>
+    <div class="menu">
+        <div class="pizza-card" onclick="openModal('Hawaiian', 'images/hawaiian.png', 'A delicious blend of ham and pineapple.')">
+            <img src="images/hawaiian.png" alt="Hawaiian">
+            <p>Hawaiian</p>
+        </div>
 
-    <!-- Modal Dialog -->
-    <div id="pizzaModal" class="w3-modal" onclick="closeModal()">
-        <div class="w3-modal-content modal-content">
-            <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
-            <div id="modal-content"></div>
+        <div class="pizza-card" onclick="openModal('Pepperoni', 'images/pepperoni.png', 'Classic pepperoni with rich tomato sauce.')">
+            <img src="images/pepperoni.png" alt="Pepperoni">
+            <p>Pepperoni</p>
+        </div>
+
+        <div class="pizza-card" onclick="openModal('Veggie', 'images/veggie.png', 'Love Margarita pizzas.')">
+            <img src="images/veggie.png" alt="Veggie">
+            <p>Veggie</p>
+        </div>
+        <div class="pizza-card" onclick="openModal('Margarita', 'images/margarita.png', 'A mix of fresh vegetables.')">
+            <img src="images/margarita" alt="Veggie">
+            <p>Margarita</p>
+        </div>
+        <div class="pizza-card" onclick="openModal('Buffalo Chicken Ranch Pizza', 'images/buffalo chicken ranch pizza.png', 'A mix of chicken, ranch, and buffalo.')">
+            <img src="images/buffalo chicken ranch pizza.png" alt="Veggie">
+            <p>Buffalo Chicken Ranch Pizza</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Pizza Image">
+            <p id="modal-description"></p>
         </div>
     </div>
 
