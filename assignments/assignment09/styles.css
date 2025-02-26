@@ -90,10 +90,13 @@ h2 {
 }
 
 .modal-image img {
-    width: 20px;
-    height: 20px;
+    width: 150px; /* Reduce the size */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Ensure it doesn’t stretch */
     border-radius: 10px;
+    object-fit: contain;
 }
+
 
 /* Close button */
 .close {
