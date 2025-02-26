@@ -43,10 +43,13 @@ const pizzaContainer = document.getElementById("pizza-container");
 pizzaContainer.innerHTML = pizzas.map(pizza => pizza.getSection()).join("");
 
 // Modal Functions
-function openModal(title, imgSrc, description) {
+function openModal(title, imgSrc, ingredients, sauce, cheese, price) {
     document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-ingredients").innerText = `Ingredients: ${ingredients}`;
+    document.getElementById("modal-sauce").innerText = `Sauce: ${sauce}`;
+    document.getElementById("modal-cheese").innerText = `Cheese: ${cheese}`;
+    document.getElementById("modal-price").innerText = `Price: $${price}`;
     document.getElementById("modal-image").src = imgSrc;
-    document.getElementById("modal-description").innerText = description;
     document.getElementById("modal").style.display = "flex";
 }
 
