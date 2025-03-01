@@ -10,13 +10,19 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0;
-    width: 100%;
+.title-container {
+    text-align: center;  
+    width: 100%;         
+    display: flex;       
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 20px;    
 }
 
+h1 {
+    font-size: 2rem;      /* Adjusts text size */
+    font-weight: bold;    /* Makes the text bold */
+}
 
 .pizza-menu {
     display: flex;
