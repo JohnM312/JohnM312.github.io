@@ -23,6 +23,51 @@ header {
     flex-wrap: wrap;
 }
 
+/* Hamburger Menu - Hidden by Default */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Hide the checkbox input */
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--red);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show the menu when checkbox is checked */
+    #menu-toggle:checked + nav ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 /* Logo Styling */
 .logo {
     width: 150px;
