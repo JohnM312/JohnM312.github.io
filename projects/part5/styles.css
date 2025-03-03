@@ -22,64 +22,6 @@ header {
     padding: 10px 20px;
     flex-wrap: wrap;
 }
-/* General Navigation Styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: red; /* Keep header red */
-    padding: 10px 20px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-/* Hamburger Menu - Hidden by Default */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-    transition: 0.3s;
-}
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide nav links */
-        flex-direction: column;
-        background: red;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    /* Show nav when checkbox is checked */
-    #menu-toggle:checked + nav ul {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
 
 /* Logo Styling */
 .logo {
