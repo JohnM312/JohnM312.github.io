@@ -29,9 +29,10 @@ header {
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
+    z-index: 1001;
 }
 
-.hamburger div {
+.hamburger .bar {
     width: 30px;
     height: 3px;
     background: var(--white);
@@ -39,14 +40,19 @@ header {
     transition: 0.3s;
 }
 
-/* Hide the checkbox input */
-#menu-toggle {
+/* Hide Checkbox */
+.menu-checkbox {
     display: none;
 }
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
-    nav ul {
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide navigation by default */
+    .nav-links {
         display: none;
         flex-direction: column;
         background: var(--red);
@@ -58,12 +64,8 @@ header {
         padding: 10px 0;
     }
 
-    /* Show the menu when checkbox is checked */
-    #menu-toggle:checked + nav ul {
-        display: flex;
-    }
-
-    .hamburger {
+    /* Show menu when checkbox is checked */
+    .menu-checkbox:checked + .hamburger + nav .nav-links {
         display: flex;
     }
 }
