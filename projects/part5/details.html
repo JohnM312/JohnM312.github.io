@@ -10,9 +10,21 @@
 <body>
 
 <header>
-    <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
+    <a href="pokemon.html">
+        <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
+    </a>
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Menu -->
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="pokemon.html">Home</a></li>
             <li><a href="rules.html">Rules</a></li>
             <li><a href="decks.html">Sample Decks</a></li>
@@ -21,6 +33,7 @@
         </ul>
     </nav>
 </header>
+
 
 <main class="details-container">
     <h1>Card Details <span class="subheading">– This will provide descriptions on how the card works.</span></h1>
