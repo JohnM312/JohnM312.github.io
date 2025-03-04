@@ -1,0 +1,12 @@
+[
+  {
+  "_id": 1
+  "name": "Pikachu",
+  "img_name": images/PikachuV.png",
+  "type": "Electric",
+  "hp": "130",
+  "moves": ["Thunder Shock", "Electro Ball"],
+  "rarity": "V",
+  "set": "Electric Set"
+  },
+]
