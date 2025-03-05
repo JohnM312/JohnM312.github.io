@@ -22,7 +22,7 @@
     {
         "_id": 3,
         "name": "Blastoise",
-        "img_name": "images/Blastoise Ex.png",
+        "img_name": "images/Blastoise EX.png",
         "type": "Water",
         "hp": 100,
         "abilities": ["Hydro Pump", "Rain Dance"],
