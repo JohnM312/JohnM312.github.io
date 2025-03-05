@@ -16,7 +16,7 @@
         "type": "Fire",
         "hp": 120,
         "abilities": ["Flamethrower", "Heat Blast"],
-        "rarity": "Rare",
+        "rarity": "EX",
         "set": "Base Set"
     },
     {
@@ -26,7 +26,7 @@
         "type": "Water",
         "hp": 100,
         "abilities": ["Hydro Pump", "Rain Dance"],
-        "rarity": "Rare",
+        "rarity": "EX",
         "set": "Base Set"
     },
     {
@@ -36,7 +36,7 @@
         "type": "Grass",
         "hp": 110,
         "abilities": ["Solar Beam", "Razor Leaf"],
-        "rarity": "Rare",
+        "rarity": "EX",
         "set": "Base Set"
     },
     {
@@ -56,7 +56,7 @@
         "type": "Psychic",
         "hp": 130,
         "abilities": ["Psystrike", "Confusion"],
-        "rarity": "Legendary",
+        "rarity": "EX",
         "set": "Psychic Masters"
     },
     {
@@ -76,7 +76,7 @@
         "type": "Dragon",
         "hp": 140,
         "abilities": ["Dragon Ascent", "Twister"],
-        "rarity": "Legendary",
+        "rarity": "EX",
         "set": "Sky Legends"
     }
 ]
