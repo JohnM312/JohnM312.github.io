@@ -21,6 +21,7 @@ function displayCards(cards) {
             <p><strong>Rarity:</strong> ${card.rarity}</p>
             <p><strong>Set:</strong> ${card.set}</p>
         `;
+        console.log(PokeInfo)
         container.appendChild(cardElement);
     });
 }
