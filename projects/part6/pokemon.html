@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <a href="pokemon.html">
+        <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
+    </a>
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="home-container">
+    <h1>Welcome to the Pokémon Trading Card Game!</h1>
+
+    <!-- Top Row: Introduction & Guide -->
+    <div class="top-row">
+        <div class="column">
+            <h2>Introduction to Pokémon TCG</h2>
+            <p>The Pokémon Trading Card Game (TCG) is a collectible card game where players build decks around their favorite Pokémon and battle against others.</p>
+            <img src="images/PokemonTCG.png" alt="Pokémon TCG">
+        </div>
+
+        <div class="column">
+            <h2>Getting Started Guide</h2>
+            <ul>
+                <li>Get a **starter deck** or build your own.</li>
+                <li>Learn the basic rules and mechanics.</li>
+                <li>Play against friends or in tournaments.</li>
+                <li>Collect rare cards to enhance your deck!</li>
+            </ul>
+            <img src="images/PokemonGettingStarted.png" alt="Getting Started">
+        </div>
+    </div>
+
+    <!-- Bottom Row: Featured Cards (Full Width) -->
+    <div class="bottom-row">
+        <h2>Featured Cards</h2>
+        <div class="featured-cards">
+            <div class="featured-card">
+                <img src="images/Venasaur EX.png" alt="Venasaur EX">
+                <p><strong>Venasaur EX:</strong> A powerful Grass-type Pokémon known for its regenerative attacks.</p>
+            </div>
+            <div class="featured-card">
+                <img src="images/Pikachu V.jpg" alt="Pikachu V">
+                <p><strong>Pikachu V:</strong> A fan-favorite Electric-type Pokémon with high-speed moves.</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
