@@ -1,12 +1,82 @@
 [
-  {
-  "_id": 1
-  "name": "Pikachu",
-  "img_name": images/PikachuV.png",
-  "type": "Electric",
-  "hp": "130",
-  "moves": ["Thunder Shock", "Electro Ball"],
-  "rarity": "V",
-  "set": "Electric Set"
-  },
+    {
+        "_id": 1,
+        "name": "Pikachu",
+        "img_name": "images/pikachu_card.jpg",
+        "type": "Electric",
+        "hp": 60,
+        "abilities": ["Thunder Shock", "Electro Ball"],
+        "rarity": "Common",
+        "set": "Base Set"
+    },
+    {
+        "_id": 2,
+        "name": "Charizard",
+        "img_name": "images/charizard_card.jpg",
+        "type": "Fire",
+        "hp": 120,
+        "abilities": ["Flamethrower", "Heat Blast"],
+        "rarity": "Rare",
+        "set": "Base Set"
+    },
+    {
+        "_id": 3,
+        "name": "Blastoise",
+        "img_name": "images/blastoise_card.jpg",
+        "type": "Water",
+        "hp": 100,
+        "abilities": ["Hydro Pump", "Rain Dance"],
+        "rarity": "Rare",
+        "set": "Base Set"
+    },
+    {
+        "_id": 4,
+        "name": "Venusaur",
+        "img_name": "images/venusaur_card.jpg",
+        "type": "Grass",
+        "hp": 110,
+        "abilities": ["Solar Beam", "Razor Leaf"],
+        "rarity": "Rare",
+        "set": "Base Set"
+    },
+    {
+        "_id": 5,
+        "name": "Gengar",
+        "img_name": "images/gengar_card.jpg",
+        "type": "Ghost",
+        "hp": 90,
+        "abilities": ["Shadow Ball", "Hypnosis"],
+        "rarity": "Uncommon",
+        "set": "Haunted Shadows"
+    },
+    {
+        "_id": 6,
+        "name": "Mewtwo",
+        "img_name": "images/mewtwo_card.jpg",
+        "type": "Psychic",
+        "hp": 130,
+        "abilities": ["Psystrike", "Confusion"],
+        "rarity": "Legendary",
+        "set": "Psychic Masters"
+    },
+    {
+        "_id": 7,
+        "name": "Lucario",
+        "img_name": "images/lucario_card.jpg",
+        "type": "Fighting",
+        "hp": 100,
+        "abilities": ["Aura Sphere", "Force Palm"],
+        "rarity": "Uncommon",
+        "set": "Battle Warriors"
+    },
+    {
+        "_id": 8,
+        "name": "Rayquaza",
+        "img_name": "images/rayquaza_card.jpg",
+        "type": "Dragon",
+        "hp": 140,
+        "abilities": ["Dragon Ascent", "Twister"],
+        "rarity": "Legendary",
+        "set": "Sky Legends"
+    }
 ]
