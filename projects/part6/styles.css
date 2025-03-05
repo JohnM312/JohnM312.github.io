@@ -1,0 +1,342 @@
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --red: #ff0000;
+    --yellow: #ffcc00;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+/* Header & Navigation Bar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--red);
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px;
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+/* 🚀 Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Hide Checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* 📱 Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide navigation by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--red);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-checkbox:checked + .hamburger + nav .nav-links {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* 🏠 Home Page Layout */
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Top Row: Two Columns Side by Side */
+.top-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    padding: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Bottom Row: Featured Cards */
+.bottom-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Featured Cards Section */
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Individual Card Container */
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Set a fixed width */
+    text-align: center;
+    border: 1px solid var(--red);
+    padding: 15px;
+    background: var(--white);
+}
+
+/* Adjust Card Image Size */
+.featured-card img {
+    width: 100%; /* Ensures the image stays within its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 200px; /* Prevents the image from exceeding the container */
+    object-fit: contain; /* Ensures the image is fully visible */
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .featured-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .featured-card img {
+        max-width: 100%; /* Allow images to take full width on small screens */
+    }
+}
+
+/* 📜 Catalog Page Specific Styling */
+.catalog-container {
+    padding: 20px;
+}
+
+.trading-card-database {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-types {
+    display: flex;
+    gap: 10px;
+}
+
+.search-button {
+    background-color: var(--yellow);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .trading-card-database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .featured-card img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Rules & Decks Pages */
+.rules-content, .decks-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid var(--red);
+    background-color: var(--white);
+}
+
+.deck-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.deck {
+    width: 300px;
+    text-align: center;
+    border: 1px solid var(--red);
+    padding: 15px;
+    background: var(--white);
+}
+
+.deck img {
+    width: 100%;
+    height: auto;
+}
+
+/* 📌 Card Details Page */
+.details-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+}
+
+.card-details-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-image img {
+    width: 350px;
+    height: auto;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.info-box {
+    background: #f8f8f8;
+    padding: 10px;
+    border-left: 4px solid var(--yellow);
+    text-align: left;
+}
+
+/* 📱 Responsive Fix for Mobile for Catalog */
+@media (max-width: 768px) {
+    .trading-card-database {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .featured-card img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
