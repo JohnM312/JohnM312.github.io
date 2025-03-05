@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("cards.json") // Fetch the JSON file
+    fetch("PokeInfo.json") // Fetch the JSON file
         .then(response => response.json()) // Convert response to JSON
         .then(data => displayCards(data)) // Call function to display cards
         .catch(error => console.error("Error loading JSON:", error));
