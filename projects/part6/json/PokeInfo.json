@@ -2,7 +2,7 @@
     {
         "_id": 1,
         "name": "Pikachu",
-        "img_name": "images/pikachu V.jpg",
+        "img_name": "images/Pikachu V.jpg",
         "type": "Electric",
         "hp": 190,
         "abilities": ["Thunder Shock", "Electro Ball"],
@@ -12,7 +12,7 @@
     {
         "_id": 2,
         "name": "Charizard",
-        "img_name": "images/charizard_card.jpg",
+        "img_name": "images/Charizard EX.png",
         "type": "Fire",
         "hp": 120,
         "abilities": ["Flamethrower", "Heat Blast"],
@@ -22,7 +22,7 @@
     {
         "_id": 3,
         "name": "Blastoise",
-        "img_name": "images/blastoise_card.jpg",
+        "img_name": "images/Blastoise Ex.png",
         "type": "Water",
         "hp": 100,
         "abilities": ["Hydro Pump", "Rain Dance"],
@@ -32,7 +32,7 @@
     {
         "_id": 4,
         "name": "Venusaur",
-        "img_name": "images/venusaur_card.jpg",
+        "img_name": "images/Venasaur EX.png",
         "type": "Grass",
         "hp": 110,
         "abilities": ["Solar Beam", "Razor Leaf"],
