@@ -2,11 +2,11 @@
     {
         "_id": 1,
         "name": "Pikachu",
-        "img_name": "images/pikachu_card.jpg",
+        "img_name": "images/pikachu V.jpg",
         "type": "Electric",
-        "hp": 60,
+        "hp": 190,
         "abilities": ["Thunder Shock", "Electro Ball"],
-        "rarity": "Common",
+        "rarity": "V",
         "set": "Base Set"
     },
     {
