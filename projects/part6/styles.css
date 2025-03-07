@@ -1,4 +1,3 @@
-
 :root {
     --black: #000;
     --white: #fff;
@@ -162,7 +161,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px; /* Set a fixed width */
+    width: 250px;
     text-align: center;
     border: 1px solid var(--red);
     padding: 15px;
@@ -171,10 +170,10 @@ nav ul li a {
 
 /* Adjust Card Image Size */
 .featured-card img {
-    width: 100%; /* Ensures the image stays within its container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 200px; /* Prevents the image from exceeding the container */
-    object-fit: contain; /* Ensures the image is fully visible */
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: contain;
 }
 
 /* Mobile Optimization */
@@ -190,8 +189,52 @@ nav ul li a {
     }
 
     .featured-card img {
-        max-width: 100%; /* Allow images to take full width on small screens */
+        max-width: 100%;
     }
+}
+
+/* 🌟 Why Play Pokémon TCG Section */
+.why-play {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffebcc;
+    border: 1px solid var(--red);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.why-play ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-play li {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 🎉 Fun Facts Section */
+.fun-facts {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 1px solid var(--red);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.fun-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fun-facts li {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* 📜 Catalog Page Specific Styling */
@@ -323,45 +366,3 @@ nav ul li a {
     border-left: 4px solid var(--yellow);
     text-align: left;
 }
-
-/* 📱 Responsive Fix for Mobile for Catalog */
-@media (max-width: 768px) {
-    .trading-card-database {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .search-container {
-        width: 100%;
-    }
-
-    .featured-card img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-/* Pokemon .json parsing */
-#pokemon-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.pokemon-card {
-    width: 250px;
-    border: 2px solid red;
-    padding: 15px;
-    text-align: center;
-    background: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.pokemon-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
