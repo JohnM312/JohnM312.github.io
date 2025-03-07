@@ -42,7 +42,7 @@
     {
         "_id": 5,
         "name": "Gengar",
-        "img_name": "images/gengar_card.jpg",
+        "img_name": "images/Gengar Uncommon.png",
         "type": "Ghost",
         "hp": 90,
         "abilities": ["Shadow Ball", "Hypnosis"],
