@@ -52,7 +52,7 @@
     {
         "_id": 6,
         "name": "Mewtwo",
-        "img_name": "images/mewtwo_card.jpg",
+        "img_name": "images/Mewtwo EX.png",
         "type": "Psychic",
         "hp": 130,
         "abilities": ["Psystrike", "Confusion"],
