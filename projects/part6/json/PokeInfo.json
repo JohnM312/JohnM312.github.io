@@ -62,7 +62,7 @@
     {
         "_id": 7,
         "name": "Lucario",
-        "img_name": "images/lucario_card.jpg",
+        "img_name": "images/Lucario Uncommon.png",
         "type": "Fighting",
         "hp": 100,
         "abilities": ["Aura Sphere", "Force Palm"],
