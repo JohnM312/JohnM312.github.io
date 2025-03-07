@@ -3,76 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pokémon TCG</title>
+    <title>Pokémon TCG Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <a href="pokemon.html">
-        <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
-    </a>
-
-    <!-- Hamburger Menu Button -->
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <label for="menu-toggle" class="hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </label>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="pokemon.html">Home</a></li>
-            <li><a href="rules.html">Rules</a></li>
-            <li><a href="decks.html">Sample Decks</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="details.html">Card Details</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<main class="home-container">
-    <h1>Welcome to the Pokémon Trading Card Game!</h1>
-
-    <!-- Top Row: Introduction & Guide -->
-    <div class="top-row">
-        <div class="column">
-            <h2>Introduction to Pokémon TCG</h2>
-            <p>The Pokémon Trading Card Game (TCG) is a collectible card game where players build decks around their favorite Pokémon and battle against others.</p>
-            <img src="images/PokemonTCG.png" alt="Pokémon TCG">
-        </div>
-
-        <div class="column">
-            <h2>Getting Started Guide</h2>
-            <ul>
-                <li>Get a **starter deck** or build your own.</li>
-                <li>Learn the basic rules and mechanics.</li>
-                <li>Play against friends or in tournaments.</li>
-                <li>Collect rare cards to enhance your deck!</li>
+    <!-- Header Section -->
+    <header>
+        <img src="images/PokemonTCG.png" alt="Pokémon Logo" class="logo">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="pokemon.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="details.html">Card Details</a></li>
+                <li><a href="decks.html">Sample Decks</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
             </ul>
-            <img src="images/PokemonGettingStarted.png" alt="Getting Started">
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <!-- Bottom Row: Featured Cards (Full Width) -->
-    <div class="bottom-row">
-        <h2>Featured Cards</h2>
-        <div class="featured-cards">
-            <div class="featured-card">
-                <img src="images/Venasaur EX.png" alt="Venasaur EX">
-                <p><strong>Venasaur EX:</strong> A powerful Grass-type Pokémon known for its regenerative attacks.</p>
+    <!-- Main Content Container -->
+    <main class="home-container">
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h1>Welcome to Pokémon TCG</h1>
+            <p>The Pokémon Trading Card Game (TCG) is a collectible card game based on the Pokémon franchise. Players build decks of Pokémon, Trainer, and Energy cards to battle each other, using strategy to outplay their opponents.</p>
+        </section>
+
+        <!-- Two-Column Layout -->
+        <div class="top-row">
+            <div class="column">
+                <h2>What is Pokémon TCG?</h2>
+                <p>Pokémon TCG is a competitive trading card game where players use decks featuring their favorite Pokémon to battle opponents. The objective is to take all of your Prize Cards by knocking out enemy Pokémon!</p>
+                <img src="images/pokemon-battle.jpg" alt="Pokémon Battle">
             </div>
-            <div class="featured-card">
-                <img src="images/Pikachu V.jpg" alt="Pikachu V">
-                <p><strong>Pikachu V:</strong> A fan-favorite Electric-type Pokémon with high-speed moves.</p>
+
+            <div class="column">
+                <h2>How to Play</h2>
+                <p>Players take turns playing Pokémon, attaching Energy cards, and using attacks. The game ends when one player has no Pokémon left in play or when all Prize Cards are taken.</p>
+                <img src="images/how-to-play.jpg" alt="How to Play Pokémon TCG">
             </div>
         </div>
-    </div>
 
-</main>
+        <!-- Why Play Pokémon TCG Section -->
+        <section class="why-play">
+            <h2>Why Play Pokémon TCG?</h2>
+            <ul>
+                <li><strong>Strategic Depth:</strong> The game combines skill, strategy, and a bit of luck, making every match exciting.</li>
+                <li><strong>Collectible Cards:</strong> Players can build powerful decks and collect rare, shiny, and special edition cards.</li>
+                <li><strong>Community & Tournaments:</strong> There are local leagues, online matches, and even world championships.</li>
+                <li><strong>Fun for All Ages:</strong> Whether you're a beginner or a competitive player, there's a place for everyone.</li>
+            </ul>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="fun-facts">
+            <h2>Fun Facts about Pokémon TCG</h2>
+            <ul>
+                <li>The <strong>most expensive Pokémon card</strong> ever sold is a Pikachu Illustrator card, auctioned for over <strong>$5 million</strong>!</li>
+                <li>Some cards, like <strong>Shadowless First Edition Charizard</strong>, are worth thousands due to their rarity.</li>
+                <li>Pokémon TCG was first released in <strong>1996</strong> in Japan, and it's still growing worldwide.</li>
+                <li>There are <strong>over 13,000 different Pokémon cards</strong> printed since the game began.</li>
+                <li>Some older cards, like <strong>Ancient Mew</strong>, had unique text that made them mysterious and collectible.</li>
+            </ul>
+        </section>
+
+    </main>
 
 </body>
 </html>
