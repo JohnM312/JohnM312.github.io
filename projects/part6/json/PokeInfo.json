@@ -5,7 +5,7 @@
         "img_name": "images/Pikachu V.jpg",
         "type": "Electric",
         "hp": 190,
-        "abilities": ["Thunder Shock", "Electro Ball"],
+        "abilities": ["Lightning Blast (100+)"],
         "rarity": "V",
         "set": "Base Set"
     },
@@ -15,7 +15,7 @@
         "img_name": "images/Charizard EX.png",
         "type": "Fire",
         "hp": 120,
-        "abilities": ["Flamethrower", "Heat Blast"],
+        "abilities": ["Slash (60)", "Crimson Storm (200)"],
         "rarity": "EX",
         "set": "Base Set"
     },
@@ -25,7 +25,7 @@
         "img_name": "images/Blastoise EX.png",
         "type": "Water",
         "hp": 100,
-        "abilities": ["Hydro Pump", "Rain Dance"],
+        "abilities": ["Surf (40)", "Hydro Bazooka (100+)"],
         "rarity": "EX",
         "set": "Base Set"
     },
@@ -35,7 +35,7 @@
         "img_name": "images/Venasaur EX.png",
         "type": "Grass",
         "hp": 110,
-        "abilities": ["Solar Beam", "Razor Leaf"],
+        "abilities": ["Giant Bloom (100)", "Razor Leaf (60)"],
         "rarity": "EX",
         "set": "Base Set"
     },
@@ -45,7 +45,7 @@
         "img_name": "images/Gengar Uncommon.png",
         "type": "Ghost",
         "hp": 90,
-        "abilities": ["Shadow Ball", "Hypnosis"],
+        "abilities": ["Hypnoblast (90)"],
         "rarity": "Uncommon",
         "set": "Haunted Shadows"
     },
@@ -55,7 +55,7 @@
         "img_name": "images/Mewtwo EX.png",
         "type": "Psychic",
         "hp": 130,
-        "abilities": ["Psystrike", "Confusion"],
+        "abilities": ["Psychic Sphere (50)", "Psydrive (120)"],
         "rarity": "EX",
         "set": "Psychic Masters"
     },
@@ -65,17 +65,17 @@
         "img_name": "images/Lucario Uncommon.png",
         "type": "Fighting",
         "hp": 100,
-        "abilities": ["Aura Sphere", "Force Palm"],
+        "abilities": ["Avenging Knuckle (30+)", "Accelerating Stab (120)"],
         "rarity": "Uncommon",
         "set": "Battle Warriors"
     },
     {
         "_id": 8,
         "name": "Rayquaza",
-        "img_name": "images/rayquaza_card.jpg",
+        "img_name": "images/Rayquaza EX.jpg",
         "type": "Dragon",
         "hp": 140,
-        "abilities": ["Dragon Ascent", "Twister"],
+        "abilities": ["Intensifying Burn (10+)", "Dragon Pulse (100)"],
         "rarity": "EX",
         "set": "Sky Legends"
     }
