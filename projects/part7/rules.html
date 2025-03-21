@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules - Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <a href="pokemon.html">
+        <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
+    </a>
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="rules-content">
+        <h1>Rules and Setup</h1>
+
+        <section class="setup">
+            <h2>Game Setup</h2>
+            <div class="column-container">
+                <div class="column">
+                    <ul>
+                        <li>Each player needs a **60-card deck**.</li>
+                        <li>Shuffle your deck and draw **7 cards**.</li>
+                        <li>Place **one Basic Pokémon** as your Active Pokémon.</li>
+                        <li>Set aside **6 Prize cards**.</li>
+                        <li>Flip a coin to decide who goes first.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="images/TCGDiagram.png" alt="Game Setup Diagram">
+                </div>
+            </div>
+        </section>
+
+        <section class="turn-structure">
+            <h2>Turn Structure</h2>
+            <div class="column-container">
+                <div class="column">
+                    <h3>Beginning Phase</h3>
+                    <ul>
+                        <li>Draw a card (except first turn for the first player).</li>
+                        <li>Play Basic Pokémon to your Bench.</li>
+                        <li>Attach **1 Energy card** per turn.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Action Phase</h3>
+                    <ul>
+                        <li>Evolve Pokémon if possible.</li>
+                        <li>Play **Trainer cards** (Supporter, Item, Stadium).</li>
+                        <li>Use **Abilities** if applicable.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Battle Phase</h3>
+                    <ul>
+                        <li>Attack using your Active Pokémon.</li>
+                        <li>Apply Weakness & Resistance.</li>
+                        <li>Knock out Pokémon and take **Prize cards**.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="winning">
+            <h2>Winning the Game</h2>
+            <ul>
+                <li>Take all **6 Prize cards**.</li>
+                <li>Your opponent has **no Pokémon left**.</li>
+                <li>Your opponent **can’t draw a card** at the start of their turn.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
