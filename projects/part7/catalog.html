@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <a href="pokemon.html">
+        <img src="images/PokemonTCG.png" alt="Pokemon Logo" class="logo">
+    </a>
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="pokemon.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="decks.html">Sample Decks</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="details.html">Card Details</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>Catalog</h1>
+
+        <section class="trading-card-database">
+            <h2>Trading Card Database:</h2>
+
+            <div class="search-container">
+                <label for="card-name">Card Name:</label>
+                <input type="text" id="card-name" placeholder="Please enter">
+
+                <label for="energy-types">Energy Types:</label>
+                <select id="energy-types">
+                    <option>Energy Types Menu</option>
+                    <option>Grass</option>
+                    <option>Fire</option>
+                    <option>Water</option>
+                    <option>Electric</option>
+                    <option>Psychic</option>
+                    <option>Fighting</option>
+                    <option>Darkness</option>
+                    <option>Metal</option>
+                    <option>Fairy</option>
+                    <option>Dragon</option>
+                </select>
+
+                <div class="card-types">
+                    <label>Card Types:</label>
+                    <select>
+                        <option>Select Pokémon Type</option>
+                        <option>Basic</option>
+                        <option>Stage 1</option>
+                        <option>Stage 2</option>
+                        <option>EX</option>
+                        <option>GX</option>
+                        <option>V</option>
+                        <option>VSTAR</option>
+                    </select>
+
+                    <select>
+                        <option>Select Trainer - Item</option>
+                        <option>Item</option>
+                        <option>Supporter</option>
+                        <option>Stadium</option>
+                    </select>
+
+                    <select>
+                        <option>Select Energy Type</option>
+                        <option>Basic Energy</option>
+                        <option>Special Energy</option>
+                    </select>
+                </div>
+
+                <button class="search-button">Search</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="images/Zapdos EX.jpg" alt="Zapdos EX">
+            </div>
+            <div id="pokemon-cards-container"></div>
+            <script src="script.js"></script>
+
+        </section>
+    </main>
+</body>
+</html>
